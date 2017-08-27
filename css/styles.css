@@ -1185,8 +1185,11 @@ a.btn-login:focus:after,
         max-width: 530px;
     }
     .section-title {
+        margin-bottom: 20px;
         font-size: 80px;
         line-height: 1;
+        color: #005de8;
+        text-align: center;
     }
     .section-talk .section-title {
         margin-bottom: 19px;
@@ -1283,6 +1286,10 @@ a.btn-login:focus:after,
 
 /*-------------------------------------SECTION-OUR-LENDERS--------------------------*/
 .section-our-lenders {}
+    .section-our-lenders .section-title {
+        margin-bottom: 42px;
+        font-size: 42px;
+    }
     .page-menu-box {
         position: relative;
         margin-top: 17px;
@@ -1415,6 +1422,9 @@ a.btn-login:focus:after,
                         border-top: none;
                         padding: 17px 26px 19px;
                     }
+                    .lenders-list.home-loans .lender-info {
+                        padding: 32px 46px 40px;
+                    }
                     .lender-name {
                         display: block;
                         margin-bottom: 4px;
@@ -1460,7 +1470,40 @@ a.btn-login:focus:after,
                             -o-transform: translate(-50%, -50%);
                             transform: translate(-50%, -50%);
                         }
-
+/*-------------------------------------SECTION-BANNER-------------------------------*/
+.section-banner {
+    overflow: hidden;
+    position: relative;
+    background-color: #005de8;
+    min-height: 762px;
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+    .section-banner .container {
+        position: relative;
+        z-index: 10;
+    }
+    .banner-bg {
+        position: absolute;
+        z-index: 1;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        top: -9999px;
+        left: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        margin: auto;
+    }
+        .banner-title {
+            margin-bottom: 43px;
+            max-width: 850px;
+            font-size: 90px;
+            line-height: 1;
+            word-spacing: -.04em;
+            color: #0e5286;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
