@@ -2,8 +2,11 @@
 @media all and (min-width: 1920px) {
 
 }
-@media all and (min-width: 1680px) {
-
+@media all and (max-width: 1600px) {
+    a.hero-apy-link,
+    .hero-apy-link {
+        bottom: 30px;
+    }
 }
 
 @media all and (max-width: 1400px) {
