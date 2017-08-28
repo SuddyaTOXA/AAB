@@ -38,7 +38,7 @@ a:hover                        { color: #015CE9; text-decoration: underline; }
 .align-l                       { text-align:left !important; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
-
+.hide-el                        { display:none; }
 
 @font-face {
     font-family: 'FreightSansProBook-Regular';
@@ -150,11 +150,19 @@ a.btn,
 a.btn:after,
 .btn:after {
     position: absolute;
-    content: '\f105';
+    content: '\e900';
     top: 50%;
-    right: 16px;
-    font: normal normal normal 24px/24px FontAwesome;
-    text-rendering: auto;
+    right: 18px;
+    font-size: 13px;
+    font-family: 'icomoon-aab' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #292929;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -238,6 +246,11 @@ a.btn-small,
     min-width: 203px;
     font-size: 13px;
 }
+a.btn-small:after,
+.btn-small:after {
+    right: 15px;
+    font-size: 10px;
+}
 a.btn-big,
 .btn-big {
     font-size: 18px;
@@ -246,8 +259,8 @@ a.btn-big,
 }
 a.btn-big:after,
 .btn-big:after {
-    right: 23px;
-    font-size: 29px;
+    right: 26px;
+    font-size: 17px;
     line-height: 1;
 }
 a.btn-login,
@@ -306,7 +319,7 @@ a.btn-login:focus:after,
     margin: 0;
     padding: 15px 16px 13px;
     font-size: 18px;
-    border: 1px solid #545454;
+    border: 1px solid #d1d1d1;
     box-shadow: none;
     color: #191f22;
     background-color: #F1F1F1;
@@ -499,12 +512,15 @@ a.btn-login:focus:after,
             -o-transition: 0.35s;
             transition: 0.35s;
         }
-        .logo img {
-            max-width: 100%;
-            max-height: 100%;
-            padding: 14px 10px 14px;
-        }
-
+            .logo img {
+                max-width: 100%;
+                max-height: 100%;
+                padding: 14px 10px 14px;
+            }
+            .mob-logo {
+                display: none;
+                max-width: 181.5px;
+            }
 .search-box {
     display: none;
     position: absolute;
@@ -548,9 +564,14 @@ a.btn-login:focus:after,
                 width: 46px;
                 text-align: center;
                 height: 40px;
-                font-size: 60px;
+                font-size: 40px;
                 line-height: 40px;
                 color: #ffffff;
+            }
+            a.close-search span,
+            .close-search span {
+                position: relative;
+                top: 2px;
             }
             a.close-search:hover,
             a.close-search:focus,
@@ -619,10 +640,10 @@ a.btn-login:focus:after,
 
 .mobile-menu-toggle {
     position: absolute;
-    left: -10px;
+    left: -5px;
     top: 0;
-    height: 70px;
-    width: 70px;
+    height: 58px;
+    width: 58px;
     vertical-align: middle;
     cursor: pointer;
     font-size: 26px; }
@@ -974,18 +995,13 @@ a.btn-login:focus:after,
                     .mobile-menu > li.expanded:focus:after,
                     .sub-menu > li.expanded:hover:after,
                     .sub-menu > li.expanded:focus:after {
-                        margin-top: -5px;
-                        -webkit-transform-origin: center center;
-                        -moz-transform-origin: center center;
-                        -o-transform-origin: center center;
-                        -ms-transform-origin: center center;
-                        transform-origin: center center;
-                        -webkit-transform: rotate(180deg);
-                        -khtml-transform: rotate(180deg);
-                        -moz-transform: rotate(180deg);
-                        -ms-transform: rotate(180deg);
-                        -o-transform: rotate(180deg);
-                        transform: rotate(180deg);
+                        margin-top: -6px;
+                        -webkit-transform: rotate(270deg);
+                        -khtml-transform: rotate(270deg);
+                        -moz-transform: rotate(270deg);
+                        -ms-transform: rotate(270deg);
+                        -o-transform: rotate(270deg);
+                        transform: rotate(270deg);
                     }
                     .sub-menu > li a:after,
                     .sub-menu-second-lvl > li a:after {
@@ -998,19 +1014,33 @@ a.btn-login:focus:after,
                         background-color: #CACACA;
                     }
                     .mobile-menu .expanded:after {
-                        content: "\f107";
-                        font-family: FontAwesome;
-                        font-size: 26px;
-                        line-height: 1;
-                        text-indent: 0;
-                        width: 18px;
-                        height: 18px;
                         position: absolute;
+                        content: "\e900";
                         top: 20px;
-                        margin-top: -8px;
                         right: 10px;
-                        display: inline-block;
+                        margin-top: -4px;
+                        font-size: 13px;
+                        font-family: 'icomoon-aab' !important;
+                        speak: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
                         color: #005ce8;
+                        -webkit-transform-origin: center center;
+                        -moz-transform-origin: center center;
+                        -o-transform-origin: center center;
+                        -ms-transform-origin: center center;
+                        transform-origin: center center;
+                        -webkit-transform: rotate(90deg);
+                        -khtml-transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
+                        -o-transform: rotate(90deg);
+                        transform: rotate(90deg);
                         -webkit-transition: 0.35s;
                         -khtml-transition: 0.35s;
                         -moz-transition: 0.35s;
@@ -1019,14 +1049,6 @@ a.btn-login:focus:after,
                         transition: 0.35s;
                     }
 
-{
-    -webkit-transform: rotate(6.5deg);
-    -khtml-transform: rotate(6.5deg);
-    -moz-transform: rotate(6.5deg);
-    -ms-transform: rotate(6.5deg);
-    -o-transform: rotate(6.5deg);
-    transform: rotate(6.5deg);
-}
 .mobile-menu:hover:after {
     color: #0097de; }
 .mobile-menu.open:after {
@@ -1293,17 +1315,19 @@ a.btn-login:focus:after,
     a.hero-apy-link:after,
     .hero-apy-link:after {
         position: absolute;
-        content: '\f105';
+        content: '\e900';
         top: 50%;
         right: 23px;
-        font: normal normal normal 50px/50px FontAwesome;
-        text-rendering: auto;
-        color: #C8C8C8;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
+        font-size: 20px;
+        font-family: 'icomoon-aab' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         -webkit-transform: translate(0, -50%);
@@ -1926,11 +1950,19 @@ a.btn-login:focus:after,
         }
         .search-zip-box:before {
             position: absolute;
-            content: '\f041';
+            content: '\e902';
             top: 50%;
-            left: 19px;
-            font: normal normal normal 26px/26px FontAwesome;
-            text-rendering: auto;
+            left: 16px;
+            font-family: 'icomoon-aab' !important;
+            speak: none;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             color: #C8C8C8;
             -webkit-transition: 0.2s;
             -moz-transition: 0.2s;

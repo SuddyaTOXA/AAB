@@ -63,8 +63,8 @@
     .header-login-box {
         position: absolute;
         display: block;
-        width: 40px;
-        min-height: 70px;
+        width: 58px;
+        min-height: 58px;
         right: 0;
         top: 0;
         background-color: transparent;
@@ -81,7 +81,8 @@
         }
             .login span {
                 display: block;
-                margin-top: 23px;
+                left: 0;
+                margin-top: 19px;
                 padding-top: 15px;
                 padding-left: 0;
                 font-size: 7px;
@@ -90,7 +91,7 @@
             .login span:before {
                 top: 0;
                 left: 50%;
-                font-size: 15px;
+                font-size: 13px;
                 line-height: 1;
                 -moz-transform: translate(-50%, 0);
                 -ms-transform: translate(-50%, 0);
@@ -145,16 +146,19 @@
         top: 0;
         left: 0;
         right: 0;
-        min-height: 70px;
+        min-height: 58px;
     }
         .logo {
             position: relative;
-            top: 10px;
+            top: 4px;
             float: none;
-            max-width: 200px;
+            max-width: 181px;
             display: block;
             margin: 0 auto;
+            padding: 0;
         }
+            .desktop-logo { display: none; }
+            .mob-logo { display: block; }
 #footer {
     padding-bottom: 10px;
 }
@@ -260,6 +264,9 @@
                 }
             a.full-site,
             .full-site {
+                display: block;
+            }
+            .hide-el {
                 display: block;
             }
 }
