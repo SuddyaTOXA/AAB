@@ -1314,6 +1314,9 @@ a.btn-login:focus:after,
                 font-size: 16px;
                 line-height: 1.2;
             }
+            .value-info.mob {
+                display: none;
+            }
     a.hero-apy-link,
     .hero-apy-link {
         position: absolute;
@@ -1389,9 +1392,24 @@ a.btn-login:focus:after,
 /*-------------------------------------SECTION-TALK--------------------------------*/
 .section-talk {
     color: #005de8;
+    background-color: #ffffff;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-    .section-talk .left-box {}
+    .section-talk .container {
+        position: relative;
+        display: table;
+        min-height: 930px;
+        padding: 40px 0;
+    }
+    .section-talk .left-box,
     .section-talk .right-box {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle;
+    }
+    .talk-box {
         max-width: 530px;
     }
     .section-title {
@@ -1404,6 +1422,7 @@ a.btn-login:focus:after,
     .section-talk .section-title {
         margin-bottom: 19px;
         font-size: 103px;
+        text-align: left;
     }
     .talk-desc {
         margin-left: 10px;
@@ -1420,6 +1439,34 @@ a.btn-login:focus:after,
         width: 100%;
         font-size: 16px;
     }
+    .talk-name-box {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        max-width: 170px;
+        text-align: right;
+        color: #292929;
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+        .talk-person-name {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: .09em;
+            text-transform: uppercase;
+        }
+        .talk-pos {
+            display: block;
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: .02em;
+        }
 
 /*-------------------------------------SECTION-INTERESTING-------------------------*/
 .section-interesting {
@@ -1459,16 +1506,35 @@ a.btn-login:focus:after,
         padding-bottom: 80px;
     }
         .interesting-list > li {
+            position: relative;
             display: table-cell;
             width: 50%;
             vertical-align: middle;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .interesting-list > li:nth-child(1) {}
         .interesting-list > li:nth-child(2) {
             padding-left: 105px;
         }
             .interesting-box {
+                position: relative;
+                z-index: 20;
                 max-width: 320px;
+            }
+            .interesting-box-bg {
+                display: none;
+                position: absolute;
+                z-index: 10;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: #ffffff;
             }
             .interesting-box.blue-dark {
                 color: #11396b;
@@ -1799,6 +1865,10 @@ a.btn-login:focus:after,
     padding-top: 44px;
     padding-bottom: 68px;
 }
+.section-more-links.personal {
+    padding-top: 38px;
+    padding-bottom: 95px;
+}
     .section-more-links .container {
         display: table;
         width: 100%;
@@ -1874,6 +1944,37 @@ a.btn-login:focus:after,
                 .more-link:focus {
                     text-decoration: none;
                 }
+        .more-apy-box {
+            margin-bottom: 36px;
+        }
+            .info-box > *:last-child {
+                margin-bottom: 0;
+            }
+            .more-apy-box .apy-box-desc {
+                margin-bottom: -11px;
+                font-size: 18px;
+                color: #005de8;
+                letter-spacing: .02em;
+            }
+            .more-apy-box .apy-box-desc sup {
+                position: relative;
+                font-size: 12px;
+            }
+            .more-apy-box .apy-box {
+                font-size: 62px;
+                color: #005de8;
+            }
+            .more-apy-box .apy-box sup {
+                top: -3px;
+                font-size: 30px;
+            }
+            .more-apy-box .apy-box span {
+                bottom: -24px;
+                right: -1px;
+                font-size: 12px;
+            }
+
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1923,7 +2024,6 @@ a.btn-login:focus:after,
         }
     .footer-middle-box {
         padding-top: 34px;
-        padding-bottom: 19px;
     }
         .footer-coll-list {
             overflow: hidden;
@@ -1977,6 +2077,11 @@ a.btn-login:focus:after,
                 .coll-title + .coll-link {
                     margin-top: -17px;
                 }
+                a.coll-title + .search-zip-box,
+                .coll-title + .search-zip-box {
+                    margin-top: -7px;
+                }
+
         .footer-mob-menu {
             overflow: hidden;
             display: none;
@@ -2034,6 +2139,7 @@ a.btn-login:focus:after,
         .footer-box {
             overflow: hidden;
             font-size: 16px;
+            padding-bottom: 19px;
         }
             .footer-box span {
                 padding-right: 35px;
@@ -2064,6 +2170,8 @@ a.btn-login:focus:after,
             display: block;
             max-width: 720px;
             margin-bottom: 16px;
+            letter-spacing: 0;
+            word-spacing: 0.1em;
         }
         .power-by {
             float: right;

@@ -67,7 +67,10 @@
         padding: 0 15px;
     }
     #main-content {
-        display: none;
+        /*display: none;*/
+    }
+    .wrapper {
+        margin-top: 58px;
     }
     .header-login-box {
         position: absolute;
@@ -169,6 +172,7 @@
             .desktop-logo { display: none; }
             .mob-logo { display: block; }
 #footer {
+    padding-top: 41px;
     padding-bottom: 10px;
 }
     #footer .container {
@@ -204,7 +208,7 @@
     }
     .footer-middle-box {
         padding-top: 27px;
-        padding-bottom: 32px;
+        padding-bottom: 16px;
     }
     .footer-mob-zip-search {
         display: block;
@@ -215,8 +219,16 @@
             .btn-search {
                 padding: 17px 10px 14px;
             }
+    .search-zip-box {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    a.coll-title + .search-zip-box,
+    .coll-title + .search-zip-box {
+        margin-top: 11px;
+    }
     .box-right {
-        margin-bottom: 2px;
+        margin-bottom: 4px;
         float: none;
         margin-right: 0;
         text-align: center;
@@ -234,7 +246,10 @@
                 max-width: 48px;
             }
         .footer-box {
+            padding-top: 26px;
+            padding-bottom: 5px;
             text-align: center;
+            border-top: 1px solid #C9C9C9;
         }
             .footer-box span {
                 padding-right: 0;
@@ -242,7 +257,8 @@
                 font-size: 14px;
             }
     .footer-bottom-box {
-        padding-top: 30px;
+        padding-top: 11px;
+        border-top: none;
     }
         .power-by {
             display: none;
@@ -278,6 +294,246 @@
             .hide-el {
                 display: block;
             }
+
+ /*----------MAIN----------*/
+.table-cell-box {
+    display: table;
+    height: auto;
+}
+    .table-box .left-box,
+    .table-box .right-box {
+        float: none;
+        width: 100%;
+    }
+    .table-box .left-box {
+        display: table-footer-group;
+    }
+        .hero-title {
+            margin-bottom: 31px;
+            font-size: 28px;
+        }
+            .hero-title sup {
+                font-size: 16px;
+            }
+            .table-box {
+                min-height: 430px;
+                padding-top: 47px;
+            }
+                .table-box a.btn,
+                .table-box .btn {
+                    margin-left: 0;
+                    margin-right: 34px;
+                }
+            a.link-underline,
+            .link-underline {
+                display: inline-block;
+                max-width: 60px;
+                top: 2px;
+                padding-bottom: 6px;
+                font-size: 10px;
+                line-height: 1.5;
+            }
+            a.hero-apy-link, .hero-apy-link {
+                bottom: 0;
+                padding: 14px 42px 13px 15px;
+                border-bottom-color: #0055C2;
+            }
+            a.hero-apy-link:after, .hero-apy-link:after {
+                right: 22px;
+                font-size: 14px;
+            }
+                .apy-box {
+                    margin-bottom: 2px;
+                    font-size: 18px;
+                }
+                    .apy-box sup {
+                        font-size: 12px;
+                        top: 1px;
+                        padding-left: 0px;
+                    }
+                    .apy-box span {
+                        bottom: 3px;
+                        right: -3px;
+                        font-size: 5px;
+                    }
+                .apy-box-desc {
+                    font-size: 8px;
+                }
+    .value-box {
+        margin-bottom: 4px;
+    }
+        .hero-desc {
+            display: none;
+        }
+            .hero-value {
+                top: 0;
+                font-size: 120px;
+            }
+            .hero-value sup {
+                top: -15px;
+                padding-left: 15px;
+                font-size: 46px;
+            }
+                .value-info.desktop {
+                    display: none;
+                }
+                .value-info.mob {
+                    display: block;
+                }
+                .value-info {
+                    bottom: 17px;
+                    right: 32px;
+                    max-width: 32px;
+                    font-size: 18px;
+                    letter-spacing: .08em;
+                }
+    a.btn:after, .btn:after {
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+    a.btn-big, .btn-big {
+        font-size: 13px;
+        padding: 20px 51px 16px 25px;
+        min-width: 195px;
+    }
+    a.btn-big:after, .btn-big:after {
+        right: 27px;
+        font-size: 13px;
+        line-height: 1;
+    }
+    a.btn-small, .btn-small {
+        min-width: 154px;
+        font-size: 10px;
+        padding: 11px 9px 10px 14px;
+    }
+    a.btn-small:after, .btn-small:after {
+        right: 11px;
+        font-size: 8px;
+    }
+    .section-interesting .left-box,
+    .section-interesting .right-box {
+        display: none;
+    }
+    .section-interesting .container {
+        max-width: 100%;
+        padding: 0;
+    }
+        .interesting-list {
+            padding: 0;
+        }
+            .interesting-list > li {
+                display: block;
+                width: 100%;
+            }
+            .interesting-list > li:nth-child(2) {
+                padding-left: 0;
+            }
+                .interesting-box {
+                    min-height: 242px;
+                    margin: 0 auto;
+                    padding: 35px 15px 20px;
+                }
+                    .title {
+                        max-width: 160px;
+                        font-size: 21px;
+
+                        margin-bottom: 4px;
+                    }
+                    .interesting-desc {
+                        max-width: 160px;
+                        padding-left: 1px;
+                        margin-bottom: 19px;
+                        font-size: 12px;
+                        line-height: 1.45;
+                    }
+                    .interesting-box .btn,
+                    .interesting-box a.btn {
+                        margin-left: 2px;
+                    }
+                .interesting-box-bg {
+                    display: block;
+                }
+.section-talk {
+    background-position-x: 80px;
+}
+    .section-talk .container {
+        min-height: 466px;
+    }
+        .section-talk .left-box,
+        .section-talk .right-box {
+            width: 100%;
+        }
+        .section-talk .left-box {display: none}
+        .section-talk .right-box {
+            padding-top: 44px;
+            padding-left: 16px;
+            vertical-align: top;
+        }
+            .section-talk .section-title {
+                margin-bottom: 11px;
+                font-size: 30px;
+            }
+            .talk-box {
+                margin-left: 2px;
+                max-width: 180px;
+            }
+                .talk-desc {
+                    margin-bottom: 30px;
+                    margin-left: 3px;
+                    font-size: 16px;
+                }
+            .section-talk .right-box a.btn,
+            .section-talk .right-box .btn {
+                margin-left: 2px;
+                padding: 10px 38px 10px 14px;
+                min-width: auto;
+                max-width: 242px;
+                width: auto;
+                font-size: 10px;
+            }
+            .section-talk .right-box a.btn:after,
+            .section-talk .right-box .btn:after {
+                right: 10px;
+                font-size: 8px;
+                line-height: 1;
+            }
+    .talk-name-box {
+        top: auto;
+        bottom: 33px;
+        max-width: 170px;
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+        .talk-name-box {
+            max-width: 124px;
+            padding: 17px 10px 20px 19px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.57);
+        }
+        .talk-name-box:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 1000%;
+            height: 100%;
+            left: -1000%;
+            background-color: rgba(255, 255, 255, 0.57);
+        }
+            .talk-person-name {
+                margin-bottom: 3px;
+                font-size: 10px;
+            }
+            .talk-pos {
+                font-size: 11px;
+                line-height: 1.3;
+            }
+
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
