@@ -8,7 +8,13 @@
         bottom: 30px;
     }
 }
-
+@media all and (max-width: 1490px) {
+    .table-box {
+        width: 100%;
+        max-width: 1300px;
+        min-width: auto;
+    }
+}
 @media all and (max-width: 1400px) {
     .main-nav > ul > li > a {
         padding-left: 15px;

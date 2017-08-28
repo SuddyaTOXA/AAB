@@ -1200,8 +1200,8 @@ a.btn-login:focus:after,
 }
     .table-box {
         display: table;
-        width: 100%;
-        max-width: 1300px;
+        max-width: 100%;
+        min-width: 1300px;
         min-height: 730px;
         padding: 40px 0;
         margin: 0 auto;
