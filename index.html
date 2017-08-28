@@ -59,6 +59,7 @@
                                 </li>
                             </ul>
                         </form>
+                        <a href="/broken" class="close-btn prevent"></a>
                     </div>
                 </div>
 
@@ -101,7 +102,7 @@
                         <li><a href="locations.html">Locations & Hours</a></li>
                         <li>
                             <a href="/broken" class="search-btn prevent">
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <span class="icon-search"></span>
                             </a>
                         </li>
                     </ul>
@@ -119,14 +120,33 @@
                 <div class="mobile-menu-wrap">
                     <div class="mobile-menu-box">
                         <ul class="mobile-menu">
-                            <<li class="active"><a href="personal.html">Personal</a></li>
+                            <li class="expanded">
+                                <a href="/broken">Personal</a>
+                                <ul class="sub-menu">
+                                    <li class="expanded">
+                                        <a href="/broken">Banking</a>
+                                        <ul class="sub-menu-second-lvl">
+                                            <li><a href="/broken">All Products</a></li>
+                                            <li><a href="/broken">Checking Savings</a></li>
+                                            <li><a href="/broken">CDs</a></li>
+                                            <li><a href="/broken">IRAs</a></li>
+                                            <li><a href="/broken">Savings Calculators</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/broken">Lending</a></li>
+                                    <li><a href="/broken">Online & Mobile Banking</a></li>
+                                    <li><a href="/broken">Personal Finance Manager</a></li>
+                                    <li><a href="/broken">Additional Services</a></li>
+                                    <li><a href="/broken">Start Banking With Us</a></li>
+                                </ul>
+                            </li>
                             <li><a href="business.html">Business</a></li>
                             <li><a href="ag-financing.html">Ag Financing</a></li>
                             <li><a href="locations.html">Locations & Hours</a></li>
+                            <li><a href="/broken">About Us</a></li>
+                            <li><a href="/broken">Resources</a></li>
+                            <li><a href="/broken">Contact</a></li>
                         </ul>
-                        <div class="header-btn-box">
-                            <a href="#" class="btn btn-modal">Apply to cosmo today</a>
-                        </div>
                     </div>
                     <div class="mobile-menu-overlay"></div>
                 </div>
@@ -247,7 +267,7 @@
                         <a href="/broken" class="coll-link">FAQs</a>
                     </li>
                     <li class="big-coll">
-                        <a href="/broken" class="coll-title">Find Locations, Hours, ATMs</a>
+                        <span class="coll-title">Find Locations, Hours, ATMs</span>
                         <div class="search-zip-box">
                             <form method="get" class="search-zip">
                                 <input type="search" name="zip" class="input-style search-zip-style" value="" placeholder="enter zipcode">
@@ -256,17 +276,36 @@
                         </div>
                     </li>
                 </ul>
+                <div class="footer-mob-menu">
+                    <a href="/broken" class="coll-title">Personal</a>
+                    <a href="/broken" class="coll-title">Wire Transfers</a>
+                    <a href="/broken" class="coll-title">Business</a>
+                    <a href="/broken" class="coll-title">About Us</a>
+                    <a href="/broken" class="coll-title">Ag Financing</a>
+                    <a href="/broken" class="coll-title">Resources</a>
+                </div>
+                <div class="footer-mob-zip-search">
+                    <span class="coll-title">Find Locations, Hours, ATMs</span>
+                    <div class="search-zip-box">
+                        <form method="get" class="search-zip">
+                            <input type="search" name="zip" class="input-style search-zip-style" value="" placeholder="enter zipcode">
+                            <button class="btn btn-search" type="submit">Find</button>
+                        </form>
+                    </div>
+                </div>
                 <div class="footer-box">
-                    <span>Routing Number: 103001456</span>
-                    <span>NMLS#: 1286989</span>
                     <div class="box-right">
                         <a class="img-link" href="/broken">
-                            <img src="img/lender@2x.png" width="133" alt="lenders">
+                            <img class="img-lender" src="img/lender@2x.png" width="133" alt="lenders">
                         </a>
                         <a class="img-link" href="/broken">
-                            <img src="img/fdic@2x.jpg" width="68" alt="fdic">
+                            <img class="img-fdic" src="img/fdic@2x.jpg" width="68" alt="fdic">
                         </a>
                     </div>
+
+                    <span>Routing Number: 103001456</span>
+                    <span>NMLS#: 1286989</span>
+
                 </div>
             </div>
         </div>
@@ -282,9 +321,10 @@
                 <ul class="footer-bottom-menu">
                     <li><a href="disclosures-and-Legal">Disclosures & Legal</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="search.html">Search</a></li>
+                    <li class="hide-mob"><a href="search.html">Search</a></li>
                     <li><a href="sitemap.html">Full Sitemap</a></li>
                 </ul>
+                <a href="/broken" class="full-site">View Full Site</a>
             </div>
         </div>
     </footer>

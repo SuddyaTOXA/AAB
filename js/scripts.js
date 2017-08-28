@@ -14,8 +14,15 @@ jQuery(document).ready(function($) {
     });
 
     // for header login toggle
-    $(".login").on('click', function(){
+    $(".login, .login-bottom-box .close-btn").on('click', function(){
         $('.login-bottom-box').slideToggle(300);
+    });
+
+    // for burger menu
+    $('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function(){
+        $('.mobile-menu-toggle').toggleClass('active');
+        $('.mobile-menu-wrap').toggleClass('showing');
+        $(document.body).toggleClass('overflow');
     });
 
     // for smooth scroll
