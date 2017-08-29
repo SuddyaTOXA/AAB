@@ -1143,14 +1143,14 @@ a.btn-login:focus:after,
 .content {
     font-size: 16px;
     font-weight: 300;
-
+    line-height: 1.65;
 }
 
 .content .big {
 
 }
 .inverse .content { color: #ffffff; }
-.content * { margin-bottom: 40px; }
+.content * { margin-bottom: 26px; }
 .content *:last-child { margin-bottom: 0; }
 .content h1, .content .h1style,
 .content h2, .content .h2style,
@@ -1237,10 +1237,9 @@ a.btn-login:focus:after,
     letter-spacing: .02em;
     line-height: 1.2;
 }
-.section-content .content.big {}
-.section-content .content.big {}
-.section-content .content.big {}
-.section-content .content.big {}
+.section-lender-detail .content {
+    letter-spacing: .02em;
+}
 /*-------------------------------------SECTION-HERO--------------------------------*/
 .section-hero {
     position: relative;
@@ -1620,9 +1619,9 @@ a.btn-login:focus:after,
     }
     .page-menu-box {
         display: table;
-        width: 100%;
         position: relative;
         margin-top: 17px;
+        margin: 17px auto 0;
         text-align: center;
     }
     .page-menu-box:after {
@@ -2200,6 +2199,52 @@ a.btn-login:focus:after,
                                 a.read-more:hover, .read-more:focus {
                                     text-decoration: none;
                                 }
+/*-------------------------------------SECTION-LENDER-DETAIL------------------------*/
+.section-lender-detail {
+    background-color: #ffffff;
+    background-position: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+    .section-lender-detail .container {
+        display: table;
+        width: 100%;
+        min-height: 930px;
+    }
+        .section-lender-detail .left-box,
+        .section-lender-detail .right-box {
+            display: table-cell;
+            width: 50%;
+            height: 200px;
+            vertical-align: middle;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .section-lender-detail .right-box {
+            padding-left: 114px;
+            background-color: rgba(255, 255, 255, .77);
+        }
+            .section-lender-detail .content {
+                margin-top: 31px;
+                margin-left: 6px;
+                max-width: 510px;
+            }
+            .person-name {
+                margin-bottom: 1px;
+                font-size: 48px;
+                line-height: 1;
+                word-spacing: .04em;
+                color: #005de8;
+            }
+            .person-position {
+                font-size: 16px;
+                margin-left: 4px;
+                line-height: 1.2;
+                letter-spacing: .02em;
+                font-weight: 700;
+                color: #005de8;
+                text-transform: uppercase;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
