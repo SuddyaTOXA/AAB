@@ -15,62 +15,99 @@
         min-width: auto;
     }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1440px) {
     .main-nav > ul > li > a {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+@media all and (max-width: 1400px) {
     .lenders-list.home-loans .lender-info {
         padding: 32px 26px 40px;
     }
+    .hero-value {
+        top: 0;
+        font-size: 230px;
+    }
+        .hero-value sup {
+            top: -37px;
+            padding-left: 12px;
+            font-size: 80px;
+        }
+        .value-info {
+            bottom: 24px;
+            max-width: 40px;
+            font-size: 13px;
+        }
 }
 
-@media all and (max-width: 1280px) {
-
+@media all and (max-width: 1300px) {
+    .logo {
+        max-width: 240px;
+        margin-top: 7px;
+    }
+    .main-nav > ul > li > a {
+        font-size: 18px;
+    }
+    .login span {
+        font-size: 18px;
+    }
+    .header-login-box {
+        max-width: 225px;
+    }
+    a.forgot, .forgot {
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
 }
 
-@media all and (max-width: 1199px) {
+@media all and (max-width: 1120px) {
+    .main-nav > ul > li > a {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .footer-coll-list {
+        margin-bottom: -40px;
+    }
+    .footer-coll-list > li {
+        width: 33.33%;
+        margin-bottom: 40px;
+    }
+    .footer-coll-list > li.big-coll,
+    .footer-coll-list > li.small-coll {
+        width: 33.33%;
+    }
 
 }
 
 @media all and (max-width: 1080px) {
-
+    .table-cell-box {
+        display: table;
+        height: auto;
+    }
+    .table-box .left-box,
+    .table-box .right-box {
+        float: none;
+        width: 100%;
+    }
+    .table-box .left-box {
+        display: table-footer-group;
+    }
+    .value-box {
+        display: inline-block;
+    }
+    .section-more-links .info-box {
+        padding-left: 20px;
+        width: 320px;
+    }
 }
 
 @media all and (max-width: 1024px) {
-
-}
-
-@media all and (max-width: 991px) {
-
-}
-
-@media all and (max-width: 960px) {
-
-}
-
-@media all and (max-width: 860px) {
-
-}
-
-@media all and (max-width: 790px) {
-
-}
-
-@media all and (max-width: 768px) {
-
-}
-
-@media all and (max-width: 767px) {
-    .container {
-        max-width: 320px;
-        padding: 0 15px;
-    }
-    #main-content {
-        /*display: none;*/
-    }
     .wrapper {
         margin-top: 58px;
+    }
+    .interesting-list > li:nth-child(2) {
+        padding-left: 20px;
     }
     .header-login-box {
         position: absolute;
@@ -81,77 +118,76 @@
         top: 0;
         background-color: transparent;
     }
-        .login {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            margin-top: 0;
-            padding: 0;
-            text-align: center;
-        }
-            .login span {
-                display: block;
-                left: 0;
-                margin-top: 19px;
-                padding-top: 15px;
-                padding-left: 0;
-                font-size: 7px;
-                text-transform: uppercase;
-            }
-            .login span:before {
-                top: 0;
-                left: 50%;
-                font-size: 13px;
-                line-height: 1;
-                -moz-transform: translate(-50%, 0);
-                -ms-transform: translate(-50%, 0);
-                -webkit-transform: translate(-50%, 0);
-                -o-transform: translate(-50%, 0);
-                transform: translate(-50%, 0);
-            }
-        .login-bottom-box {
-            /*display: block;*/
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            height: 100%;
-            padding: 10px;
-            background-color: rgba(1, 1, 1, 0.95);
-        }
-            .login-bottom-box form {
-                display: table;
-                width: 100%;
-                max-width: 320px;
-                margin: 0 auto;
-                padding: 0 15px;
-                height: 100vh;
-                overflow-x: auto;
-            }
-                .login-bottom-box  ul {
-                    display: table-cell;
-                    width: 100%;
-                    height: 50px;
-                    vertical-align: middle;
-                }
-            .login-bottom-box .close-btn {
-                display: block;
-            }
-            a.btn-login, .btn-login {
-                max-width: 100%;
-                padding: 20px 40px 16px 18px;
-                letter-spacing: .2em;
-            }
-                a.forgot,
-                .forgot {
-                    margin: 28px auto;
-                    max-width: 100%;
-                    display: block;
-                    font-size: 16px;
-                    text-align: center;
-                    letter-spacing: .02em;
-                }
+    .login {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .login span {
+        display: block;
+        left: 0;
+        margin-top: 19px;
+        padding-top: 15px;
+        padding-left: 0;
+        font-size: 7px;
+        text-transform: uppercase;
+    }
+    .login span:before {
+        top: 0;
+        left: 50%;
+        font-size: 13px;
+        line-height: 1;
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    .login-bottom-box {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        height: 100%;
+        padding: 10px;
+        background-color: rgba(1, 1, 1, 0.95);
+    }
+    .login-bottom-box form {
+        display: table;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 15px;
+        height: 100vh;
+        overflow-x: auto;
+    }
+    .login-bottom-box  ul {
+        display: table-cell;
+        width: 100%;
+        height: 50px;
+        vertical-align: middle;
+    }
+    .login-bottom-box .close-btn {
+        display: block;
+    }
+    a.btn-login, .btn-login {
+        max-width: 100%;
+        padding: 20px 40px 16px 18px;
+        letter-spacing: .2em;
+    }
+    a.forgot,
+    .forgot {
+        margin: 28px auto;
+        max-width: 100%;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: .02em;
+    }
     .desktop {
         display: none !important;
     }
@@ -174,17 +210,146 @@
         right: 0;
         min-height: 58px;
     }
-        .logo {
-            position: relative;
-            top: 4px;
-            float: none;
-            max-width: 181px;
-            display: block;
-            margin: 0 auto;
-            padding: 0;
+    .logo {
+        position: relative;
+        top: 4px;
+        float: none;
+        max-width: 181px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .desktop-logo { display: none; }
+    .mob-logo { display: block; }
+}
+
+@media all and (max-width: 991px) {
+    .alert-box .container {
+        position: relative;
+    }
+    .alert-box .close-btn {
+        top: -20px;
+        right: 7px;
+    }
+        .alert-title {
+            font-size: 18px;
         }
-            .desktop-logo { display: none; }
-            .mob-logo { display: block; }
+        .alert-desc,
+        .alert-desc a {
+            font-size: 14px;
+        }
+        .alert-message {
+            padding-right: 60px;
+        }
+    .title {
+        font-size: 32px;
+    }
+    .interesting-desc {
+        font-size: 14px;
+    }
+    a.btn-small, .btn-small {
+        font-size: 12px;
+    }
+    .section-talk .section-title {
+        font-size: 80px;
+    }
+    .talk-desc {
+        font-size: 26px;
+    }
+    .section-talk .right-box a.btn,
+    .section-talk .right-box .btn {
+        font-size: 14px;
+    }
+    .footer-coll-list > li.big-coll {
+        width: 40%;
+    }
+    .hero-value {
+        font-size: 200px;
+    }
+    .hero-value sup {
+        top: -32px;
+        font-size: 70px;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+    .hero-desc {
+        font-size: 17px;
+    }
+    a.btn-big, .btn-big {
+        font-size: 16px;
+        padding: 23px 60px 20px 32px;
+        min-width: 260px;
+    }
+    .lenders-list > li {
+        width: 33.33%;
+    }
+    .lenders-list > li:nth-child(4n+1) {
+        clear: none;
+    }
+    .lenders-list > li:nth-child(3n+1) {
+        clear: both;
+    }
+    .lender-info {
+        min-height: 76px;
+    }
+        .lender-name {
+            font-size: 18px;
+        }
+        .lender-position {
+            font-size: 14px;
+        }
+.section-banner {
+    min-height: 580px;
+}
+    .business .banner-title {
+        margin-bottom: 46px;
+        font-size: 76px;
+    }
+    .section-more-links .info-box,
+    .more-links-box {
+        display: block;
+    }
+    .section-more-links .info-box {
+        margin-bottom: 40px;
+    }
+    .section-more-links.personal .info-box {
+        width: 100%;
+    }
+    .more-apy-box {
+        display: inline-block;
+        margin-right: 60px;
+    }
+}
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 860px) {
+    .footer-coll-list > li.big-coll {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 790px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 767px) {
+    .container {
+        max-width: 320px;
+        padding: 0 15px;
+    }
+    #main-content {
+        /*display: none;*/
+    }
+
+
 #footer {
     padding-top: 38px;
     padding-bottom: 10px;
@@ -389,7 +554,7 @@
                 padding-left: 15px;
                 font-size: 46px;
             }
-                .value-info.desktop {
+                .value-info.desktop-d {
                     display: none;
                 }
                 .value-info.mob {
@@ -397,7 +562,7 @@
                 }
                 .value-info {
                     bottom: 17px;
-                    right: 32px;
+                    right: 0;
                     max-width: 32px;
                     font-size: 18px;
                     letter-spacing: .08em;
@@ -423,6 +588,10 @@
         -webkit-transform: translate(0, -50%);
         -o-transform: translate(0, -50%);
         transform: translate(0, -50%);
+    }
+    a.btn-login, .btn-login {
+        padding: 20px 40px 16px 18px;
+        font-size: 13px;
     }
     a.btn-big, .btn-big {
         font-size: 13px;
@@ -634,7 +803,7 @@
                 margin-bottom: 0;
                 width: 50%;
             }
-            .lenders-list > li:nth-child(4n+1) {
+            .lenders-list > li:nth-child(3n+1) {
                 clear: none;
             }
             .lenders-list > li:nth-child(2n+1) {
@@ -712,6 +881,10 @@
             }
     .section-more-links.personal .info-box {
         margin-bottom: 15px;
+    }
+    .more-apy-box {
+        display: block;
+        margin-right: 0;
     }
 }
 
