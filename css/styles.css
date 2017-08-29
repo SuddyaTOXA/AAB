@@ -2245,6 +2245,91 @@ a.btn-login:focus:after,
                 color: #005de8;
                 text-transform: uppercase;
             }
+/*-------------------------------------SECTION-WE-KNOW------------------------------*/
+.section-we-know {
+    padding-top: 69px;
+    padding-bottom: 40px;
+}
+        .section-we-know .section-title {
+            margin-bottom: 2px;
+            font-size: 53px;
+            text-align: center;
+        }
+        .section-sub-title {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 25px;
+            text-align: center;
+            color: #005de8;
+        }
+        .section-we-know .lenders-list {
+            margin-top: 38px;
+        }
+        .section-we-know .lender-info {
+            padding-top: 32px;
+            padding-bottom: 39px;
+        }
+        .lender-info-list {
+            display: block;
+            max-width: 340px;
+            margin-top: 28px;
+            margin-bottom: 38px;
+            color: #292929;
+        }
+        .lender-info-list > span {
+            position: relative;
+            display: block;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-size: 17px;
+            line-height: 1.4;
+            letter-spacing: .02em;
+        }
+        .lender-info-list > span:before {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 4px;
+            left: 1px;
+            top: 8px;
+            -webkit-border-radius: 50%;
+            -khtml-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            border: 1px solid #292929;
+            background-color: transparent;
+        }
+
+        .lender-info-list > *:last-child {
+            margin-bottom: 0;
+        }
+        .lender-call-box {
+            color: #292929;
+        }
+            .lender-call {
+                display: block;
+                margin-bottom: 2px;
+                font-size: 13px;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+            }
+            .lender-phone {
+                display: block;
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: .02em;
+            }
+        .lender-id {
+            display: block;
+            position: absolute;
+            max-width: 130px;
+            right: 40px;
+            bottom: 42px;
+            color: #292929;
+            letter-spacing: .02em;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
