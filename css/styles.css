@@ -902,9 +902,30 @@ a.btn-login:focus:after,
     }
         .login-bottom-box .close-btn {
             display: none;
+            top: 0;
+            right: 0;
         }
+            .login-bottom-box .close-btn:before,
+            .login-bottom-box .close-btn:after {
+                width: 25px;
+            }
+            .mob-login {
+                margin-bottom: 36px;
+                text-align: center;
+            }
+            .mob-login span {
+                font-size: 31px;
+                color: #ffffff;
+                letter-spacing: .07em;
+            }
+            .mob-login > *:first-child {
+                padding-right: 10px;
+            }
+                .mob-login .icon-lock {
+                    font-size: 31px;
+                }
         .login-bottom-box ul > li {
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
         .login-bottom-box ul > li:last-child {
             margin-bottom: 0;
@@ -918,7 +939,8 @@ a.btn-login:focus:after,
         .login-bottom-box .input-style::-moz-placeholder { color: #002e66; }
         .login-bottom-box .input-style:-ms-input-placeholder { color: #002e66; }
         .login-bottom-box .input-style:-moz-placeholder { color: #002e66; }
-        a.forgot {
+        a.forgot,
+        .forgot {
             position: relative;
             display: inline-block;
             max-width: 65px;
@@ -927,6 +949,11 @@ a.btn-login:focus:after,
             font-size: 13px;
             line-height: 1.4;
             color: #ffffff;
+        }
+        a.forgot:hover,
+        .forgot:focus {
+            color: #005de8;
+            text-decoration: none;
         }
 
 
@@ -1567,6 +1594,8 @@ a.btn-login:focus:after,
         font-size: 42px;
     }
     .page-menu-box {
+        display: table;
+        width: 100%;
         position: relative;
         margin-top: 17px;
         text-align: center;
@@ -1581,9 +1610,14 @@ a.btn-login:focus:after,
         bottom: -1px;
         background-color: #005CE7;
     }
+        .page-menu-name,
+        .page-menu-list {
+            display: table-cell;
+            vertical-align: middle;
+        }
         .page-menu-name {}
         .page-menu-list {
-            display: inline-block;
+            padding-left: 20px;
         }
             .page-menu-list > li {
                 display: inline-block;
@@ -1629,9 +1663,9 @@ a.btn-login:focus:after,
                 }
             .page-menu-name {
                 position: relative;
-                display: inline-block;
+                /*display: inline-block;*/
                 margin-right: 48px;
-                padding: 10px 20px 10px 0;
+                padding: 5px 20px 10px 0;
                 font-size: 20px;
                 color: #005CE7;
                 letter-spacing: .02em;
@@ -1641,7 +1675,7 @@ a.btn-login:focus:after,
                 content: '';
                 width: 1px;
                 height: 18px;
-                top: 50%;
+                top: 45%;
                 right: 0;
                 margin-top: 2px;
                 -moz-transform: translate(0, -50%);
@@ -1662,9 +1696,6 @@ a.btn-login:focus:after,
         }
         .lenders-list > li:nth-child(4n+1) {
             clear: both;
-        }
-        .lenders-list > li:nth-child(4n+4) .lender-info {
-            border-right: none;
         }
             .lenders-list > li a {
                 position: relative;
@@ -1694,13 +1725,30 @@ a.btn-login:focus:after,
                             height: auto;
                         }
                     .lender-info {
+                        position: relative;
                         display: block;
                         min-height: 84px;
-                        border: 1px solid #d1d1d1;
-                        border-left: none;
-                        border-top: none;
+                        border-bottom: 1px solid #d1d1d1;
                         padding: 17px 26px 19px;
                     }
+                    .lender-info:before,
+                    .lender-info:after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        width: 1px;
+                        height: 100%;
+                        background-color: #d1d1d1;
+                    }
+                    .lender-info:before {
+                        left: 0;
+                    }
+                    .lender-info:after {
+                        right: -1px;
+                    }
+                        .lenders-list > li:nth-child(2n+2) .lender-info:after {
+                            right: 0;
+                        }
                     .lenders-list.home-loans .lender-info {
                         padding: 32px 46px 40px;
                     }
@@ -1749,6 +1797,8 @@ a.btn-login:focus:after,
                             -o-transform: translate(-50%, -50%);
                             transform: translate(-50%, -50%);
                         }
+
+
 /*-------------------------------------SECTION-BANNER-------------------------------*/
 .section-banner {
     overflow: hidden;
