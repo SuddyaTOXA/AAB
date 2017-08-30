@@ -132,6 +132,12 @@
     }
 }
 
+@media all and (min-width: 1025px) {
+    .login-bottom-box ul {
+        margin-top: -14px;
+    }
+}
+
 @media all and (max-width: 1024px) {
     .wrapper {
         margin-top: 58px;
@@ -428,11 +434,12 @@
 
 @media all and (max-width: 767px) {
     .container {
-        max-width: 320px;
         padding: 0 15px;
     }
+    .container,
     .section-content.calculator .container,
-    .section-committed .container {
+    .section-committed .container,
+    .section-faqs .container {
         max-width: 320px;
     }
     #main-content {
@@ -1178,6 +1185,13 @@
     }
     .section-content.calculator .sidebar {
         display: none;
+    }
+
+    .section-faqs {
+        padding-bottom: 50px;
+    }
+    .section-faqs-container {
+        padding-top: 50px;
     }
 }
 

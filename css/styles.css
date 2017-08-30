@@ -103,13 +103,13 @@ a:hover                        { color: #015CE9; text-decoration: underline; }
 }
 
 
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-a, .btn {
+a, .btn,
+button, input[type="submit"] {
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
@@ -121,7 +121,7 @@ a:focus,
 .btn:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus,
-button:hover
+button:hover,
 button:focus {
     /*opacity: 0.8;*/
 }
@@ -1697,11 +1697,9 @@ a.btn-login:focus:after,
     .page-menu-box {
         display: table;
         position: relative;
-        margin-top: 17px;
         margin: 17px auto 0;
         text-align: center;
     }
-
         .page-menu-name,
         .page-menu-list {
             display: table-cell;
@@ -1734,7 +1732,7 @@ a.btn-login:focus:after,
                     content: '';
                     bottom: 0;
                     left: 0;
-                    height: 3px;
+                    height: 4px;
                     width: 100%;
                     background-color: transparent;
                     -webkit-transition: 0.2s;
@@ -2115,6 +2113,153 @@ a.btn-login:focus:after,
                 right: -1px;
                 font-size: 12px;
             }
+
+/*----------------------------------SECTION-FAQs------------------------------*/
+.section-faqs {
+    padding-bottom: 98px;
+}
+    .section-faqs .container {
+        max-width: 1160px;
+    }
+    .section-faqs-container {
+        max-width: 828px;
+        padding-top: 84px;
+    }
+.faq-list {
+    padding-top: 40px;
+}
+    .faq-list > li:not(:last-child) {
+        margin-bottom: 82px;
+    }
+        .faq-title,
+        .faq-sub-title {
+            font: 700 12px/1.25 "Lato", Arial, sans-serif;
+            text-transform: uppercase;
+            color: #292929;
+            letter-spacing: 1px;
+        }
+        .faq-title {
+            padding-bottom: 5px;
+            margin-bottom: 13px;
+            color: #005ce8;
+            border-bottom: 3px solid #d9d9d9;
+        }
+        .faq-sub-title {
+            padding-top: 20px;
+            margin-bottom: 22px;
+        }
+        .faq-sub-list {
+            margin-bottom: 30px;
+        }
+            .faq-sub-list > li {
+                position: relative;
+                border-bottom: 1px solid #d9d9d9;
+            }
+            .faq-sub-list > li:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+                .faq-sub-list > li > a {
+                    text-decoration: none;
+                }
+                .faq-sub-list > li h2 {
+                    position: relative;
+                    padding: 8px 35px 8px 0;
+                    color: #005ce8;
+                    font: 300 24px "Lato", Arial, sans-serif;
+                    -webkit-transition: 0.25s;
+                    -khtml-transition: 0.25s;
+                    -moz-transition: 0.25s;
+                    -ms-transition: 0.25s;
+                    -o-transition: 0.25s;
+                    transition: 0.25s;
+                    cursor: pointer;
+                }
+                .faq-sub-list > li h2.open {
+                    padding-top: 12px;
+                }
+                    .faq-sub-list > li h2 > a {
+                        color: #005ce8;
+                        font: 300 24px "Lato", Arial, sans-serif;
+                        line-height: 1.2;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                        .faq-sub-list > li h2:after {
+                            position: absolute;
+                            content: '\f107';
+                            font-family: 'FontAwesome';
+                            font-size: 30px;
+                            color: #2688eb;
+                            right: 7px;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            -khtml-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            -o-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            -webkit-transform-origin: 50%;
+                            -khtml-transform-origin: 50%;
+                            -moz-transform-origin: 50%;
+                            -ms-transform-origin: 50%;
+                            -o-transform-origin: 50%;
+                            transform-origin: 50%;
+                        }
+                        .faq-sub-list > li h2.open:after,
+                        .no-js .faq-sub-list > li h2:after {
+                            top: 12px;
+                            -webkit-transform: rotate(-180deg);
+                            -khtml-transform: rotate(-180deg);
+                            -moz-transform: rotate(-180deg);
+                            -ms-transform: rotate(-180deg);
+                            -o-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
+                        }
+                        .faq-sub-list > li h2 + [aria-hidden] {
+                            display: none;
+                        }
+                        .faq-sub-list > li h2 + [aria-hidden="false"],
+                        .no-js .faq-sub-list > li h2 + [aria-hidden] {
+                            display: block;
+                        }
+
+                .accordion-box-content {
+                    position: relative;
+                    z-index: 2;
+                    color: #292929;
+                    margin: 0;
+                    padding: 0 80px 50px 0;
+                    font: 300 16px/1.65 "Lato", Arial, sans-serif;
+                }
+                    .accordion-box-content > * {
+                        margin-bottom: 10px;
+                    }
+                    .accordion-box-content > *:last-child {
+                        margin-bottom: 0;
+                    }
+                        .accordion-box-content ul {
+                            margin-left: 20px;
+                        }
+                            .accordion-box-content ul li {
+                                list-style-type: decimal;
+                            }
+                        .accordion-box-content ol {
+                            margin-left: 20px;
+                        }
+                            .accordion-box-content ol li {
+                                list-style-type: disc;
+                            }
+                        .accordion-box-content li {
+                            margin-bottom: 5px;
+                        }
+
+                .collapsible h3 + [aria-hidden] {
+                    display: none;
+                }
+                .collapsible h3 + [aria-hidden="false"] {
+                    display: block;
+                }
 
 /*-------------------------------------SECTION-CONTENT------------------------------*/
 .section-content {
