@@ -1237,10 +1237,10 @@
         .calculator-form-list > li {
             margin-bottom: 16px;
         }
-        .calculator-form-list > li.too-el .input-style {
+        .calculator-form-list > li.two-el .input-style {
             max-width: calc(100% - 124px);
         }
-        .calculator-form-list > li.too-el .input-style.small {
+        .calculator-form-list > li.two-el .input-style.small {
             margin-left: 10px;
             max-width: 110px;
         }

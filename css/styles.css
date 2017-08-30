@@ -1247,7 +1247,37 @@ a.btn-login:focus:after,
     border: 1px solid #292929;
     background-color: transparent;
 }
-.content ol { margin-bottom: 36px; }
+.content ol {
+    counter-reset: myCounter;
+    margin-bottom: 36px;
+}
+.content ol > li {
+    position: relative;
+    margin-bottom: 2px;
+    padding-left: 26px;
+}
+.content ol > li:before {
+    position: absolute;
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    left: 2px;
+    top: 0;
+    font-size: 16px;
+    color: #292929;
+    background-color: transparent;
+}
+    .content ol  ul {
+        padding-left: 36px;
+        margin-bottom: -2px !important;
+    }
+    .content ol > li li {
+        list-style: lower-alpha;
+        padding-left: 0;
+        margin-bottom: 1px;
+    }
+    .content ol > li li:before {
+        content: none;
+    }
 .content li { margin-bottom: 11px;  text-align: left; }
 .content li:last-child { margin-bottom: 0; }
 .content blockquote { max-width: 640px; margin-left: auto; margin-right: auto; text-align: left; }
@@ -1255,6 +1285,17 @@ a.btn-login:focus:after,
 .content img.alignleft { float: left; margin: 4px 12px 12px 0; }
 .content img.alignright { float: right; margin: 4px 0 12px 12px; }
 .content img.aligncenter { display: block; margin: 0 auto 12px; clear: both; }
+
+.content.small {
+    font-size: 14px;
+    letter-spacing: .02em;
+    line-height: 1.8;
+}
+.content.small ol > li:before {
+    left: 2px;
+    top: 0;
+    font-size: 14px;
+}
 
 .content.big {
     font-size: 18px;
@@ -2820,7 +2861,23 @@ a.btn-login:focus:after,
                         display: block;
                         font-size: 25px;
                     }
-    /*----------------------------------------------------------------------------------*/
+/*-------------------------------------SECTION-REWARDS-CHECKING---------------------*/
+.section-rewards-checking {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+    .section-rewards-checking .container {
+        max-width: 1100px;
+    }
+        .section-rewards-checking .content.big {
+            max-width: 770px;
+            line-height: 1.6;
+            letter-spacing: .02em;
+        }
+        .checking-wrap {
+            max-width: 846px;
+        }
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 

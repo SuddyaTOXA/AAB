@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>All America Bank | Calculator</title>
+    <title>All America Bank | Rewards Checking</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
                     <p class="alert-desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor posuere
                         libero finibus auctor. In mollis dui est, vitae molestie sapien suscipit...
-                        <a href="/broke">Learn More</a>
+                        <a href="/broken">Learn More</a>
                     </p>
                 </div>
                 <a href="/broken" class="close-btn prevent"></a>
@@ -161,194 +161,59 @@
         </header>
 
         <div id="main-content">
-            <section class="section-content calculator">
-                <div class="container-select-box">
-                    <div class="container">
-                        <span class="select-wrap">
-                            <select>
-                                <option selected value="">Mortgage</option>
-                                <option value="">Loan</option>
-                                <option value="">Retirement</option>
-                                <option value="">Savings Goals</option>
-                                <option value="">CD / IRA</option>
-                                <option value="">Credit Card Payoff</option>
-                            </select>
-                        </span>
-                    </div>
-                </div>
+            <section class="section-rewards-checking">
                 <div class="container">
-                    <div class="content-wrap">
-                        <div class="content-box">
-                            <h1 class="content-title">Mortgage Calculator</h1>
-                            <div class="calculator-form">
-                                <form method="get" >
-                                    <ul class="calculator-form-list">
-                                        <li>
-                                            <label for="home-price">Home Price</label>
-                                            <input type="text" name="c-home-price" id="home-price" class="input-style" placeholder="$300,000">
-                                        </li>
-                                        <li class="two-el">
-                                            <label for="down-payment">Down Payment</label>
-                                            <input type="text" name="c-down-payment" id="down-payment" class="input-style" placeholder="$60,000">
-                                            <span class="equals">=</span>
-                                            <input type="text" name="c-percentage" id="percentage" class="input-style small" placeholder="20 %">
-                                        </li>
-                                        <li class="two-el">
-                                             <label for="loan-term">Loan Term</label>
-                                            <input type="text" name="c-loan-term" id="loan-term" class="input-style" placeholder="30">
-                                            <span class="select-wrap">
-                                                <select>
-                                                    <option selected value="">years</option>
-                                                    <option value="">months</option>
-                                                    <option value="">days</option>
-                                                </select>
-                                            </span>
-                                        </li>
-                                        <li>
-                                             <label for="loan-amount">Loan Amount (can’t edit)</label>
-                                            <input type="text" name="c-loan-amount" id="loan-amount" class="input-style" placeholder="$240,000" disabled>
-                                        </li>
-                                        <li>
-                                             <label for="interest-rate">Interest Rate</label>
-                                            <input type="text" name="c-interest-rate" id="interest-rate" class="input-style" placeholder="3.87 %">
-                                        </li>
-                                        <li>
-                                             <label for="property-taxes">Property Taxes</label>
-                                            <input type="text" name="c-property-taxes" id="property-taxes" class="input-style" placeholder="$2,500 /year">
-                                        </li>
-                                        <li>
-                                             <label for="home-insurance">Home Insurance</label>
-                                            <input type="text" name="c-home-insurance" id="home-insurance" class="input-style" placeholder="$1,200 /year">
-                                        </li>
-                                        <li>
-                                            <label for="other-costs">Other Costs (HOA fees, etc.) </label>
-                                            <input type="text" name="c-other-costs" id="other-costs" class="input-style" placeholder="$0 /year">
-                                        </li>
-                                        <li>
-                                            <button class="btn btn-blue btn-big" type="submit">Calculate</button>
-                                        </li>
-                                    </ul>
-                                </form>
-                            </div>
-                            <div class="calculate-results-box">
-                                <div class="calculate-box calculate-results">
-                                    <div class="left-box">
-                                        <div class="small-price-box">
-                                            <span class="price-title">Mortgage Payment</span>
-                                            <span class="price">$1,437.97</span>
-                                        </div>
-                                        <div class="small-price-box">
-                                            <span class="price-title">PROPERTY TAX / MONTH</span>
-                                            <span class="price">$208.33</span>
-                                        </div>
-                                        <div class="small-price-box">
-                                            <span class="price-title">HOME INSURANCE</span>
-                                            <span class="price">$100.00</span>
-                                        </div>
-                                        <div class="small-price-box">
-                                            <span class="price-title">Other COSTS</span>
-                                            <span class="price">$0.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="right-box">
-                                        <div class="big-price-box">
-                                            <span class="price-title">TOTAL Monthly Payment</span>
-                                            <span class="price">$1,746.30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calculate-box results-loan">
-                                    <div class="left-box">
-                                    </div>
-                                    <div class="right-box">
-                                        <div class="big-price-box">
-                                            <span class="price-title">Monthly Payment</span>
-                                            <span class="price">$471.78</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calculate-box results-retirement">
-                                    <div class="left-box">
-                                        <div class="small-price-box">
-                                            <span class="price-title">Total principal</span>
-                                            <span class="price">$57,138</span>
-                                        </div>
-                                        <div class="small-price-box">
-                                            <span class="price-title">TOTAL COMPOUNDED INTEREST</span>
-                                            <span class="price">$492,862</span>
-                                        </div>
-                                    </div>
-                                    <div class="right-box">
-                                        <div class="big-price-box">
-                                            <span class="price-title">AMOUNT TO SAVE EVERY MONTH</span>
-                                            <span class="price">$136.04</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calculate-box results-savings">
-                                    <div class="left-box">
-                                        <div class="small-price-box">
-                                            <span class="price-title">Total principal</span>
-                                            <span class="price">$8,600</span>
-                                        </div>
-                                        <div class="small-price-box">
-                                            <span class="price-title">TOTAL INTEREST</span>
-                                            <span class="price">$1,500</span>
-                                        </div>
-                                    </div>
-                                    <div class="right-box">
-                                        <div class="big-price-box">
-                                            <span class="price-title">AMOUNT TO SAVE EVERY MONTH</span>
-                                            <span class="price">$143.33</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calculate-box results-cd-ira">
-                                    <div class="left-box">
-                                        <div class="small-price-box">
-                                            <span class="price-title">TOTAL INTEREST</span>
-                                            <span class="price">$283.69</span>
-                                        </div>
-                                    </div>
-                                    <div class="right-box">
-                                        <div class="big-price-box">
-                                            <span class="price-title">END Balance</span>
-                                            <span class="price">$1,283.69</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calculate-box results-credit-card-payoff ">
-                                    <div class="left-box">
-                                        <div class="small-price-box">
-                                            <span class="price-title">Total INTEREST PAID</span>
-                                            <span class="price">$2,829</span>
-                                        </div>
-                                        <div class="small-price-box">
-                                            <span class="price-title">TOTAL COMPOUNDED INTEREST</span>
-                                            <span class="price">$12,829</span>
-                                        </div>
-                                    </div>
-                                    <div class="right-box">
-                                        <div class="big-price-box">
-                                            <span class="price-title">Payoff length</span>
-                                            <span class="price">33 months</span>
-                                            <span class="price-desc">(2 years, 9 months)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="checking-wrap">
+                        <div class="content big">
+                            <p>Our free Ultimate Rewards<sup>®</sup> personal checking account offers the highest possible
+                                interest rate — 1.50% APY — to reward you for helping us run our bank
+                                efficiently. There’s no minimum balance required and we include an All
+                                America Bank VISA debit card for secure purchases and access to
+                                <strong>1,000s of ATMs worldwide.</strong></p>
                         </div>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-box">
-                            <ul class="calculator-list">
-                                <li><a href="/broken">Mortgage</a></li>
-                                <li><a href="/broken">Loan</a></li>
-                                <li><a href="/broken">Retirement</a></li>
-                                <li><a href="/broken">Savings Goals</a></li>
-                                <li><a href="/broken">CD / IRA</a></li>
-                                <li><a href="/broken">Credit Card Payoff</a></li>
-                            </ul>
+
+                        <ul class="two-call">
+                            <li>Bank-to-bank transfers</li>
+                            <li>Person-to-person transfers</li>
+                            <li>Overdraft priviledge</li>
+                            <li>Visa debit card</li>
+                            <li>Direct deposit</li>
+                            <li>Mobile deposit</li>
+                        </ul>
+
+                        <div class="content small">
+                            <ol>
+                                <li>*We will refund up to $25 of foreign ATM fees each monthly statement cycle one lump sum.</li>
+                                <li>
+                                    To receive rewards from Ultimate Rewards personal checking account, participants must:
+                                    <ul>
+                                        <li>Make 10 All America Bank VISA<sup>®</sup> debit card transactions per monthly statement cycle.</li>
+                                        <li>Receive your statements electronically.</li>
+                                        <li>Open your account with at least $50.</li>
+                                        <li>There is no minimum balance needed to maintain your accoun</li>
+                                    </ul>
+                                </li>
+                                <li>Earn 1.50% APY when you have up to $10,000 in your account. If you have more than
+                                    $10,000 in your account, you’ll earn .50% APY. If you don’t meet the requirements
+                                    outlined above, you’ll earn .25% APY.  We will pay interest earned by your account
+                                    at the end of each monthly billing cycle.</li>
+                                <li>This is a variable rate account and the interest rate can change. Fees could affect
+                                    the earnings on this account.Learn more about our banking.</li>
+                                <li>Our monthly statement cycle ends on the 20th of each month. If the 20th falls on a
+                                    Saturday, the cycle will end on Friday the 19th. If the 20th falls on a Sunday, the
+                                    cycle will end on Monday the 21st. There are no rollover transactions.</li>
+                                <li>Qualifying VISA debit card sales transactions include each time you use your VISA debit
+                                    card to make a purchase vendor or merchant. These transactions must post and clear your
+                                    account during the payment cycle. ATM and ACH transactions do not qualify.</li>
+                                <li>Annual Percentage Yield (APY) is accurate as of 6/1/2016.</li>
+                                <li>There is a limit of two Ultimate Rewards Checking Accounts allowed per individual.</li>
+                                <li>Bank-to-Bank Transfer allows you to transfer money into or out of your All America
+                                    Bank accounts from any other other bank, savings and loan, credit union, or brokerage
+                                    account. This is a discretionary service. There is a $5,000 limit per day.
+                                    Some restrictions apply. Please contact our customer service team to request to be set
+                                    up for Bank-to-Bank Transfer.</li>
+                            </ol>
+
                         </div>
                     </div>
                 </div>
