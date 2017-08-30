@@ -412,6 +412,21 @@
     .section-content .content-wrap {
         max-width: calc(100% - 243px);
     }
+    .price-title {
+        font-size: 11px;
+    }
+    .big-price-box .price {
+        font-size: 48px;
+    }
+    .price {
+        font-size: 24px;
+    }
+    .calculator-form-list label {
+        font-size: 15px;
+    }
+    .calculator-form-list .input-style {
+        max-width: 260px;
+    }
 }
 
 @media all and (max-width: 960px) {
@@ -421,6 +436,12 @@
 @media all and (max-width: 860px) {
     .footer-coll-list > li.big-coll {
         width: 50%;
+    }
+    .section-content.calculator .sidebar {
+        max-width: 240px;
+    }
+    .section-content.calculator .content-wrap {
+        max-width: calc(100% - 240px);
     }
 }
 
@@ -450,7 +471,6 @@
 #footer {
     padding-top: 36px;
     padding-bottom: 10px;
-    border-top: 1px solid #C9C9C9;
 }
     #footer .container {
         max-width: 320px;
@@ -931,9 +951,9 @@
     .page-menu-wrap {
         display: none;
     }
-    .section-our-lenders .container-select-box {
-        margin-bottom: 20px;
-    }
+    /*.section-our-lenders .container-select-box {*/
+        /*margin-bottom: 20px;*/
+    /*}*/
 .section-more-links,
 .section-more-links.personal {
     padding-bottom: 20px;
@@ -1175,7 +1195,7 @@
             line-height: 1.1;
         }
 .section-content.calculator {
-    padding-top: 40px;
+    padding-top: 20px;
 }
     .container-select-box {
         display: block;
@@ -1193,6 +1213,94 @@
     .section-faqs-container {
         padding-top: 50px;
     }
+
+    .section-content.calculator .content-title {
+        margin-bottom: 21px;
+        font-size: 30px;
+    }
+    .calculator-form-list label {
+        margin-bottom: -1px;
+        font-size: 13px;
+    }
+    .calculator-form-list .input-style {
+        font-size: 18px;
+    }
+    .calculator-form-list select {
+        font-size: 18px;
+    }
+    .calculator-form {
+        margin-bottom: 20px;
+    }
+        .calculator-form-list {
+            margin-left: 0;
+        }
+        .calculator-form-list > li {
+            margin-bottom: 16px;
+        }
+        .calculator-form-list > li.too-el .input-style {
+            max-width: calc(100% - 124px);
+        }
+        .calculator-form-list > li.too-el .input-style.small {
+            margin-left: 10px;
+            max-width: 110px;
+        }
+        .calculator-form-list .select-wrap {
+            margin-left: 10px;
+            max-width: 110px;
+        }
+        .calculator-form-list .select-wrap:after {
+            width: 35px;
+            height: 47px;
+        }
+        .calculator-form-list .select-wrap:before {
+            right: 18px;
+            top: 19px;
+            font-size: 12px;
+        }
+            .calculator-form-list select {
+                min-height: 49px;
+                padding-left: 8px;
+            }
+
+            .calculator-form-list .input-style {
+                max-width: 100%;
+            }
+            .equals {
+                display: none;
+            }
+    .calculate-results-box {
+        padding-top: 32px;
+        border-top: none;
+    }
+        .calculate-box {
+            display: table;
+            width: 100%;
+            /*min-height: 50px;*/
+        }
+            .calculate-box .left-box,
+            .calculate-box .right-box {
+                float: none;
+                display: table-cell;
+                width: 100%;
+                padding: 0;
+                /*height: 20px;*/
+            }
+            .calculate-box .left-box {
+                padding-top: 28px;
+            }
+            .calculate-box .right-box {
+                display: table-header-group;
+            }
+                .price-title {
+                    margin-bottom: 1px;
+                    font-size: 10px;
+                }
+                .price {
+                    font-size: 18px;
+                }
+                .big-price-box .price {
+                    font-size: 35px;
+                }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {

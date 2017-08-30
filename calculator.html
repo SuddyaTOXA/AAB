@@ -187,13 +187,22 @@
                                             <label for="home-price">Home Price</label>
                                             <input type="text" name="c-home-price" id="home-price" class="input-style" placeholder="$300,000">
                                         </li>
-                                        <li>
+                                        <li class="too-el">
                                             <label for="down-payment">Down Payment</label>
                                             <input type="text" name="c-down-payment" id="down-payment" class="input-style" placeholder="$60,000">
+                                            <span class="equals">=</span>
+                                            <input type="text" name="c-percentage" id="percentage" class="input-style small" placeholder="20 %">
                                         </li>
-                                        <li>
+                                        <li class="too-el">
                                              <label for="loan-term">Loan Term</label>
                                             <input type="text" name="c-loan-term" id="loan-term" class="input-style" placeholder="30">
+                                            <span class="select-wrap">
+                                                <select>
+                                                    <option selected value="">years</option>
+                                                    <option value="">months</option>
+                                                    <option value="">days</option>
+                                                </select>
+                                            </span>
                                         </li>
                                         <li>
                                              <label for="loan-amount">Loan Amount (can’t edit)</label>
@@ -216,20 +225,116 @@
                                             <input type="text" name="c-other-costs" id="other-costs" class="input-style" placeholder="$0 /year">
                                         </li>
                                         <li>
-                                            <button class="btn btn-blue" type="submit">Calculate</button>
+                                            <button class="btn btn-blue btn-big" type="submit">Calculate</button>
                                         </li>
                                     </ul>
                                 </form>
-
-                                <div class="calculate-results-box">
-                                    <div class="calculate-box calculate-results">
-
+                            </div>
+                            <div class="calculate-results-box">
+                                <div class="calculate-box calculate-results">
+                                    <div class="left-box">
+                                        <div class="small-price-box">
+                                            <span class="price-title">Mortgage Payment</span>
+                                            <span class="price">$1,437.97</span>
+                                        </div>
+                                        <div class="small-price-box">
+                                            <span class="price-title">PROPERTY TAX / MONTH</span>
+                                            <span class="price">$208.33</span>
+                                        </div>
+                                        <div class="small-price-box">
+                                            <span class="price-title">HOME INSURANCE</span>
+                                            <span class="price">$100.00</span>
+                                        </div>
+                                        <div class="small-price-box">
+                                            <span class="price-title">Other COSTS</span>
+                                            <span class="price">$0.00</span>
+                                        </div>
                                     </div>
-                                    <div class="calculate-box results-loan"></div>
-                                    <div class="calculate-box results-retirement"></div>
-                                    <div class="calculate-box results-savings"></div>
-                                    <div class="calculate-box results-cd-ira"></div>
-                                    <div class="calculate-box results-credit-card-payoff "></div>
+                                    <div class="right-box">
+                                        <div class="big-price-box">
+                                            <span class="price-title">TOTAL Monthly Payment</span>
+                                            <span class="price">$1,746.30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculate-box results-loan">
+                                    <div class="left-box">
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="big-price-box">
+                                            <span class="price-title">Monthly Payment</span>
+                                            <span class="price">$471.78</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculate-box results-retirement">
+                                    <div class="left-box">
+                                        <div class="small-price-box">
+                                            <span class="price-title">Total principal</span>
+                                            <span class="price">$57,138</span>
+                                        </div>
+                                        <div class="small-price-box">
+                                            <span class="price-title">TOTAL COMPOUNDED INTEREST</span>
+                                            <span class="price">$492,862</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="big-price-box">
+                                            <span class="price-title">AMOUNT TO SAVE EVERY MONTH</span>
+                                            <span class="price">$136.04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculate-box results-savings">
+                                    <div class="left-box">
+                                        <div class="small-price-box">
+                                            <span class="price-title">Total principal</span>
+                                            <span class="price">$8,600</span>
+                                        </div>
+                                        <div class="small-price-box">
+                                            <span class="price-title">TOTAL INTEREST</span>
+                                            <span class="price">$1,500</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="big-price-box">
+                                            <span class="price-title">AMOUNT TO SAVE EVERY MONTH</span>
+                                            <span class="price">$143.33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculate-box results-cd-ira">
+                                    <div class="left-box">
+                                        <div class="small-price-box">
+                                            <span class="price-title">TOTAL INTEREST</span>
+                                            <span class="price">$283.69</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="big-price-box">
+                                            <span class="price-title">END Balance</span>
+                                            <span class="price">$1,283.69</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculate-box results-credit-card-payoff ">
+                                    <div class="left-box">
+                                        <div class="small-price-box">
+                                            <span class="price-title">Total INTEREST PAID</span>
+                                            <span class="price">$2,829</span>
+                                        </div>
+                                        <div class="small-price-box">
+                                            <span class="price-title">TOTAL COMPOUNDED INTEREST</span>
+                                            <span class="price">$12,829</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-box">
+                                        <div class="big-price-box">
+                                            <span class="price-title">Payoff length</span>
+                                            <span class="price">33 months</span>
+                                            <span class="price-desc">(2 years, 9 months)</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

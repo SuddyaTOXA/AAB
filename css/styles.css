@@ -115,15 +115,8 @@ button, input[type="submit"] {
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-a:hover,
-a:focus,
-.btn:hover,
-.btn:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-button:hover,
-button:focus {
-    /*opacity: 0.8;*/
+input:disabled {
+    opacity: .55;
 }
 img {
     -webkit-user-select: none;
@@ -331,7 +324,7 @@ a.btn-login:focus:after,
     font-size: 18px;
     border: 1px solid #d1d1d1;
     box-shadow: none;
-    color: #191f22;
+    color: #292929;
     background-color: #F1F1F1;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -2632,6 +2625,18 @@ a.btn-login:focus:after,
     }
     .container-select-box {
         display: none;
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 23px;
+    }
+    .container-select-box:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        background-color: #99BEF6;
     }
         .section-content.calculator .sidebar-box {
             max-width: 190px;
@@ -2691,8 +2696,131 @@ a.btn-login:focus:after,
         .section-content.calculator .content-box {
             margin-top: 11px;
         }
-
-/*----------------------------------------------------------------------------------*/
+        .calculator-form {
+            margin-bottom: 58px;
+        }
+        .calculator-form-list {
+            margin-left: 4px;
+        }
+            .calculator-form-list > li {
+                margin-bottom: 30px;
+            }
+            .calculator-form-list > li:last-child {
+                margin-bottom: 0;
+            }
+                .calculator-form-list .input-style {
+                    display: inline-block;
+                    max-width: 311px;
+                    text-align: right;
+                    padding: 15px 22px 11px;
+                    font-size: 28px;
+                    font-weight: 300;
+                    letter-spacing: .02em;
+                }
+                .calculator-form-list .input-style.small {
+                    max-width: 182px;
+                }
+                .calculator-form-list .select-wrap {
+                    margin-left: 29px;
+                    max-width: 182px;
+                }
+                .calculator-form-list select {
+                    min-height: 60px;
+                    padding: 11px 0 8px 18px;
+                    font-size: 28px;
+                    color: #545454;
+                }
+                .calculator-form-list .select-wrap:before {
+                    right: 22px;
+                    top: 15px;
+                    font-size: 22px;
+                }
+                .calculator-form-list .select-wrap:after {
+                    width: 54px;
+                    height: 58px;
+                }
+                .calculator-form-list label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    color: #545454;
+                    letter-spacing: .02em;
+                }
+                    .calculator-form-list a.btn,
+                    .calculator-form-list .btn {
+                        width: 100%;
+                        max-width: 311px;
+                        margin-top: 9px;
+                        /*padding: 22px 60px 18px 35px;*/
+                    }
+                .calculator .content-title {
+                    margin-bottom: 39px;
+                }
+                .equals {
+                    position: relative;
+                    top: 5px;
+                    padding-left: 7px;
+                    padding-right: 4px;
+                    font-size: 26px;
+                    color: #545454;
+                    padding-top: 5px;
+                }
+    .calculate-results-box {
+        max-width: 642px;
+        padding-top: 49px;
+        padding-left: 3px;
+        border-top: 1px solid #d5d5d5;
+    }
+        .calculate-box {
+            overflow: hidden;
+            margin-bottom: 80px;
+        }
+        .calculate-results-box > *:last-child {
+            margin-bottom: 0;
+        }
+            .calculate-box .left-box,
+            .calculate-box .right-box {
+                float: left;
+            }
+            .calculate-box .left-box {
+                max-width: 255px;
+                width: 100%;
+                padding-right: 10px;
+            }
+                .small-price-box {
+                    margin-bottom: 27px;
+                }
+                .calculate-box .left-box > *:last-child {
+                    margin-bottom: 0;
+                }
+                    .price-title {
+                        display: block;
+                        max-width: 180px;
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: .1em;
+                        line-height: 1.5;
+                    }
+                    .price {
+                        display: block;
+                        font-size: 26px;
+                        line-height: 1;
+                        letter-spacing: .02em;
+                    }
+                .big-price-box {}
+                    .big-price-box .price-title {
+                        max-width: 100%;
+                    }
+                    .big-price-box .price {
+                        font-size: 56px;
+                    }
+                    .price-desc {
+                        display: block;
+                        font-size: 25px;
+                    }
+    /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
@@ -2704,6 +2832,7 @@ a.btn-login:focus:after,
     z-index: 10;
     padding: 75px 0 48px;
     background-color: #ffffff;
+    border-top: 1px solid #C9C9C9;
 }
     #footer .container {
         max-width: 1280px;
