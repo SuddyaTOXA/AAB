@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>All America Bank | Ag Financing</title>
+    <title>All America Bank | Calculator</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -161,181 +161,77 @@
         </header>
 
         <div id="main-content">
-            <section class="section-banner financing">
+            <section class="section-content calculator">
                 <div class="container">
-                    <h1 class="banner-title">Supporting our farmers since 1927</h1>
-                    <a href="/broken" class="btn btn-blue btn-big">Contact us</a>
-                </div>
-                <img class="banner-bg" src="img/ag_bg.jpg" alt="banner">
-            </section>
+                    <div class="content-wrap">
+                        <div class="content-box">
+                            <h1 class="content-title">Mortgage Calculator</h1>
+                            <div class="calculator-form">
+                                <form method="get" >
+                                    <ul class="calculator-form-list">
+                                        <li>
+                                            <label for="home-price">Home Price</label>
+                                            <input type="text" name="c-home-price" id="home-price" class="input-style" placeholder="$300,000">
+                                        </li>
+                                        <li>
+                                            <label for="down-payment">Down Payment</label>
+                                            <input type="text" name="c-down-payment" id="down-payment" class="input-style" placeholder="$60,000">
+                                        </li>
+                                        <li>
+                                             <label for="loan-term">Loan Term</label>
+                                            <input type="text" name="c-loan-term" id="loan-term" class="input-style" placeholder="30">
+                                        </li>
+                                        <li>
+                                             <label for="loan-amount">Loan Amount (can’t edit)</label>
+                                            <input type="text" name="c-loan-amount" id="loan-amount" class="input-style" placeholder="$240,000" disabled>
+                                        </li>
+                                        <li>
+                                             <label for="interest-rate">Interest Rate</label>
+                                            <input type="text" name="c-interest-rate" id="interest-rate" class="input-style" placeholder="3.87 %">
+                                        </li>
+                                        <li>
+                                             <label for="property-taxes">Property Taxes</label>
+                                            <input type="text" name="c-property-taxes" id="property-taxes" class="input-style" placeholder="$2,500 /year">
+                                        </li>
+                                        <li>
+                                             <label for="home-insurance">Home Insurance</label>
+                                            <input type="text" name="c-home-insurance" id="home-insurance" class="input-style" placeholder="$1,200 /year">
+                                        </li>
+                                        <li>
+                                            <label for="other-costs">Other Costs (HOA fees, etc.) </label>
+                                            <input type="text" name="c-other-costs" id="other-costs" class="input-style" placeholder="$0 /year">
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-blue" type="submit">Calculate</button>
+                                        </li>
+                                    </ul>
+                                </form>
 
-            <section class="section-we-know">
-                <div class="container">
-                    <h2 class="section-title">We know farming</h2>
-                    <span class="section-sub-title">Meet Our Ag Lenders</span>
-                </div>
-                <ul class="lenders-list">
-                    <li>
-                        <a href="/broken">
-                            <span class="lender-box">
-                                <span class="lender-img">
-                                    <img src="img/lenders.jpg" alt="Eddie">
-                                    <span class="lender-overlay">
-                                        <span>Say Hello to Brian</span>
-                                    </span>
-                                </span>
-                                <span class="lender-info">
-                                    <span class="lender-name">Brian DeMarcus</span>
-                                    <span class="lender-position">Ag Lender  ·   Medicine Park</span>
-                                    <span class="lender-info-list">
-                                        <span>Specialties: Farm loans and credit lines, cattle and farming needs</span>
-                                        <span>Raised in a farming family outside Elgin</span>
-                                        <span>2004 graduate of Cameron University</span>
-                                        <span>Began banking career in 2004</span>
-                                    </span>
-                                     <span class="lender-call-box">
-                                        <span class="lender-call">CALL CASEY</span>
-                                        <span class="lender-phone">(405) 376-2265</span>
-                                    </span>
-                                    <span class="lender-id"> NMLS#: 1286989</span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/broken">
-                            <span class="lender-box">
-                                <span class="lender-img">
-                                    <img src="img/lenders.jpg" alt="Eddie">
-                                    <span class="lender-overlay">
-                                        <span>Say Hello to Brian</span>
-                                    </span>
-                                </span>
-                                <span class="lender-info">
-                                    <span class="lender-name">Brian DeMarcus</span>
-                                    <span class="lender-position">Ag Lender  ·   Medicine Park</span>
-                                    <span class="lender-info-list">
-                                        <span>Specialties: Farm loans and credit lines, cattle and farming needs</span>
-                                        <span>Raised in a farming family outside Elgin</span>
-                                        <span>2004 graduate of Cameron University</span>
-                                        <span>Began banking career in 2004</span>
-                                    </span>
-                                     <span class="lender-call-box">
-                                        <span class="lender-call">CALL CASEY</span>
-                                        <span class="lender-phone">(405) 376-2265</span>
-                                    </span>
-                                    <span class="lender-id"> NMLS#: 1286989</span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/broken">
-                            <span class="lender-box">
-                                <span class="lender-img">
-                                    <img src="img/lenders.jpg" alt="Eddie">
-                                    <span class="lender-overlay">
-                                        <span>Say Hello to Brian</span>
-                                    </span>
-                                </span>
-                                <span class="lender-info">
-                                    <span class="lender-name">Brian DeMarcus</span>
-                                    <span class="lender-position">Ag Lender  ·   Medicine Park</span>
-                                    <span class="lender-info-list">
-                                        <span>Specialties: Farm loans and credit lines, cattle and farming needs</span>
-                                        <span>Raised in a farming family outside Elgin</span>
-                                        <span>2004 graduate of Cameron University</span>
-                                        <span>Began banking career in 2004</span>
-                                    </span>
-                                     <span class="lender-call-box">
-                                        <span class="lender-call">CALL CASEY</span>
-                                        <span class="lender-phone">(405) 376-2265</span>
-                                    </span>
-                                    <span class="lender-id"> NMLS#: 1286989</span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/broken">
-                            <span class="lender-box">
-                                <span class="lender-img">
-                                    <img src="img/lenders.jpg" alt="Eddie">
-                                    <span class="lender-overlay">
-                                        <span>Say Hello to Brian</span>
-                                    </span>
-                                </span>
-                                <span class="lender-info">
-                                    <span class="lender-name">Brian DeMarcus</span>
-                                    <span class="lender-position">Ag Lender  ·   Medicine Park</span>
-                                    <span class="lender-info-list">
-                                        <span>Specialties: Farm loans and credit lines, cattle and farming needs</span>
-                                        <span>Raised in a farming family outside Elgin</span>
-                                        <span>2004 graduate of Cameron University</span>
-                                        <span>Began banking career in 2004</span>
-                                    </span>
-                                     <span class="lender-call-box">
-                                        <span class="lender-call">CALL CASEY</span>
-                                        <span class="lender-phone">(405) 376-2265</span>
-                                    </span>
-                                    <span class="lender-id"> NMLS#: 1286989</span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                                <div class="calculate-results-box">
+                                    <div class="calculate-box calculate-results">
 
-            <section class="section-committed">
-                <div class="container">
-                    <h2 class="section-title">We’re committed to supporting our farmers</h2>
-                    <div class="left-box">
-                        <h3 class="committed-title">Supporting our farmers is a foundation of our bank</h3>
-                        <ul class="committed-list">
-                            <li>Finance packages tailored for your operations</li>
-                            <li>Variable and fixed rate loans</li>
-                            <li>Low interest rates</li>
-                            <li>Customized payment options</li>
-                            <li>Flexible maturities suited to your business cycle</li>
-                            <li>Loan conversion, split loan and seasoned loan options</li>
-                            <li>Credit lines to manage cash flow, purchases and emergencies</li>
-                            <li>We provide the rapid turnaround times farmers need</li>
-                        </ul>
-                    </div>
-                    <div class="right-box">
-                        <h3 class="committed-title"> We provide custom financing for farmers</h3>
-                        <ul class="committed-list">
-                            <li>Equipment</li>
-                            <li>Real estate</li>
-                            <li>Working capital</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-interesting">
-                <div class="left-box" style="background-image: url(img/phone.jpg)"></div>
-                <div class="right-box" style="background-image: url(img/hero_home_2.jpg)"></div>
-                <div class="container">
-                    <ul class="interesting-list">
-                        <li>
-                            <div class="interesting-box">
-                                <h2 class="title">Bank-to-Bank Transfers</h2>
-                                <p class="interesting-desc">Transfer money into or out of your accounts from any other financial institution.</p>
-                                <a href="/broken" class="btn btn-blue btn-small">watch tutorial</a>
+                                    </div>
+                                    <div class="calculate-box results-loan"></div>
+                                    <div class="calculate-box results-retirement"></div>
+                                    <div class="calculate-box results-savings"></div>
+                                    <div class="calculate-box results-cd-ira"></div>
+                                    <div class="calculate-box results-credit-card-payoff "></div>
+                                </div>
                             </div>
-                            <div class="interesting-box-bg" style="background-image: url(img/phone.jpg); background-size: auto 100%; background-position: right;"></div>
-                        </li>
-                        <li>
-                            <div class="interesting-box blue-dark">
-                                <h2 class="title">Home Loans</h2>
-                                <p class="interesting-desc">We keep our loans in-house so you get
-                                    the best customer service experience.</p>
-                                <a href="/broken" class="btn btn-blue btn-small">meet our lenders</a>
-                            </div>
-                            <div class="interesting-box-bg" style="background-image: url(img/hero_home_2.jpg)"></div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar-box">
+                            <ul class="calculator-list">
+                                <li><a href="/broken">Mortgage</a></li>
+                                <li><a href="/broken">Loan</a></li>
+                                <li><a href="/broken">Retirement</a></li>
+                                <li><a href="/broken">Savings Goals</a></li>
+                                <li><a href="/broken">CD / IRA</a></li>
+                                <li><a href="/broken">Credit Card Payoff</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

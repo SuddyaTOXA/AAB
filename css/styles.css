@@ -2220,8 +2220,24 @@ a.btn-login:focus:after,
             padding-top: 40px;
             padding-bottom: 40px;
         }
+        .section-lender-detail .left-box img {
+            display: none;
+            margin-left: -20px;
+            max-width: calc(100% + 40px);
+            width: 100%;
+        }
         .section-lender-detail .right-box {
+            position: relative;
             padding-left: 114px;
+            background-color: rgba(255, 255, 255, .77);
+        }
+        .section-lender-detail .right-box:after {
+            position: absolute;
+            content: '';
+            right: -20px;
+            top: 0;
+            width: 20px;
+            height: 100%;
             background-color: rgba(255, 255, 255, .77);
         }
             .section-lender-detail .content {
@@ -2329,6 +2345,135 @@ a.btn-login:focus:after,
             bottom: 42px;
             color: #292929;
             letter-spacing: .02em;
+        }
+/*-------------------------------------SECTION-COMMITTED----------------------------*/
+.section-committed {
+    padding-top: 27px;
+    padding-bottom: 150px;
+}
+    .section-committed .container {
+        overflow: hidden;
+        max-width: 990px;
+    }
+        .section-committed .section-title {
+            max-width: 600px;
+            margin: 0 auto 49px;
+            font-size: 60px;
+            line-height: 1.1;
+            text-align: center;
+        }
+        .section-committed .left-box,
+        .section-committed .right-box {
+            float: left;
+            padding: 0 5px;
+        }
+        .section-committed .left-box {
+            width: 62%;
+        }
+        .section-committed .right-box {
+            width: 38%;
+            padding-left: 3px;
+        }
+            .committed-title {
+                max-width: 350px;
+                margin-bottom: 8px;
+                font-size: 28px;
+                line-height: 1.3;
+                color: #005de8;
+            }
+            .committed-list {
+                font-size: 18px;
+            }
+                .committed-list > li {
+                    position: relative;
+                    padding-left: 30px;
+                }
+                .committed-list > li:before {
+                    position: absolute;
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    left: 9px;
+                    top: 12px;
+                    -webkit-border-radius: 50%;
+                    -khtml-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    border-radius: 50%;
+                    border: 1px solid #292929;
+                    background-color: transparent;
+                }
+/*-------------------------------------SECTION-CALCULATOR----------------------------*/
+.section-content.calculator {
+    padding-top: 111px;
+}
+.section-content.calculator .container {
+    max-width: 1310px;
+}
+    .section-content.calculator .sidebar {
+        max-width: 283px;
+    }
+        .section-content.calculator .sidebar-box {
+            max-width: 190px;
+        }
+            .calculator-list {
+
+            }
+                .calculator-list > li {
+                    /*display: block;*/
+                    border-bottom: 1px solid #d3d3d3;
+                }
+                .calculator-list > li:last-child {
+                    border-bottom: none;
+                }
+                    .calculator-list > li a {
+                        position: relative;
+                        display: block;
+                        padding: 18px 0 15px;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .calculator-list > li a:after {
+                        position: absolute;
+                        content: '\e900';
+                        top: 50%;
+                        right: 4px;
+                        font-size: 13px;
+                        font-family: 'icomoon-aab' !important;
+                        speak: none;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-variant: normal;
+                        text-transform: none;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        color: #292929;
+                        -webkit-transition: 0.2s;
+                        -moz-transition: 0.2s;
+                        -o-transition: 0.2s;
+                        transition: 0.2s;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-transform: translate(0, -50%);
+                        -ms-transform: translate(0, -50%);
+                        -webkit-transform: translate(0, -50%);
+                        -o-transform: translate(0, -50%);
+                        transform: translate(0, -50%);
+                    }
+                    .calculator-list > li a:hover,
+                    .calculator-list > li a:focus {
+                        text-decoration: none;
+                    }
+                    .calculator-list > li a:hover:after,
+                    .calculator-list > li a:focus:after {
+                        color: #005de8;
+                    }
+    .section-content.calculator .content-wrap {
+        max-width: calc(100% - 283px);
+    }
+        .section-content.calculator .content-box {
+            margin-top: 11px;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/

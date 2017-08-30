@@ -7,6 +7,9 @@
     .hero-apy-link {
         bottom: 30px;
     }
+    .section-lender-detail .container {
+        min-height: 760px;
+    }
 }
 @media all and (max-width: 1490px) {
     .table-box {
@@ -65,6 +68,22 @@
         max-width: 100%;
         padding-bottom: 10px;
     }
+    .section-lender-detail .right-box {
+        padding-left: 40px;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    .section-lender-detail {
+        background-image: none !important;
+    }
+        .section-lender-detail .left-box {
+            padding: 0;
+            vertical-align: top;
+        }
+        .section-lender-detail .left-box img {
+            display: block;
+        }
 }
 
 @media all and (max-width: 1120px) {
@@ -227,6 +246,7 @@
     }
     .desktop-logo { display: none; }
     .mob-logo { display: block; }
+    .hide-el { display: block; }
 }
 
 @media all and (max-width: 991px) {
@@ -312,6 +332,9 @@
         margin-bottom: 46px;
         font-size: 76px;
     }
+    .banner-title {
+        font-size: 76px;
+    }
     .section-more-links .info-box,
     .more-links-box {
         display: block;
@@ -325,6 +348,58 @@
     .more-apy-box {
         display: inline-block;
         margin-right: 60px;
+    }
+    .section-lender-detail .right-box {
+        padding-left: 20px;
+        padding-top: 20px;
+        vertical-align: top;
+    }
+        .person-name {
+            margin-bottom: -2px;
+            font-size: 40px;
+        }
+        .person-position {
+            font-size: 14px;
+        }
+            .section-lender-detail .content {
+                margin-top: 16px;
+            }
+    .section-we-know .section-title {
+        font-size: 48px;
+    }
+    .section-sub-title {
+        font-size: 22px;
+    }
+    .section-committed .section-title {
+        font-size: 54px;
+    }
+    .committed-title {
+        font-size: 26px;
+    }
+    .committed-list {
+        font-size: 17px;
+    }
+    .section-committed .left-box {
+        padding-right: 40px;
+    }
+    .section-content {
+        padding-top: 60px;
+    }
+    .content-title {
+        font-size: 50px;
+    }
+    .box-title,
+    .sidebar-title {
+        font-size: 17px;
+    }
+    .content.big {
+        font-size: 16px;
+    }
+    .section-content .sidebar {
+        max-width: 243px;
+    }
+    .section-content .content-wrap {
+        max-width: calc(100% - 243px);
     }
 }
 
@@ -351,14 +426,18 @@
         max-width: 320px;
         padding: 0 15px;
     }
+    .section-committed .container {
+        max-width: 320px;
+    }
     #main-content {
         /*display: none;*/
     }
 
 
 #footer {
-    padding-top: 38px;
+    padding-top: 36px;
     padding-bottom: 10px;
+    border-top: 1px solid #C9C9C9;
 }
     #footer .container {
         max-width: 320px;
@@ -477,9 +556,7 @@
             .full-site {
                 display: block;
             }
-            .hide-el {
-                display: block;
-            }
+
 
  /*----------MAIN----------*/
 .table-cell-box {
@@ -892,6 +969,189 @@
         display: block;
         margin-right: 0;
     }
+
+.section-lender-detail {
+    background-image: none !important;
+}
+    .section-lender-detail .left-box,
+    .section-lender-detail .right-box {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .section-lender-detail .left-box {
+        padding: 0;
+    }
+        .section-lender-detail .left-box img {
+            margin-left: -15px;
+            max-width: calc(100% + 30px);
+        }
+    .section-lender-detail .right-box {
+        padding-top: 23px;
+        padding-left: 0;
+    }
+        .person-name {
+            margin-bottom: -6px;
+            font-size: 27px;
+        }
+        .person-position {
+            font-size: 7px;
+            margin-left: 2px;
+            letter-spacing: .1em;
+        }
+        .section-lender-detail .content {
+            margin-top: 18px;
+            margin-left: 2px;
+            letter-spacing: -.01em;
+            word-spacing: .01em;
+            line-height: 1.35;
+        }
+        .content * {
+            margin-bottom: 21px;
+        }
+
+    .section-banner.financing {
+        min-height: 462px;
+        padding-top: 73px;
+    }
+        .section-banner.financing .banner-title {
+            margin-bottom: 20px;
+            font-size: 42px;
+            line-height: 1;
+            max-width: 265px;
+        }
+.section-we-know {
+    padding-top: 50px;
+}
+    .section-we-know .section-title {
+        margin-bottom: 4px;
+        font-size: 30px;
+        word-spacing: .04em;
+        letter-spacing: .02em;
+    }
+        .section-sub-title {
+            font-size: 15px;
+        }
+    .section-we-know .lenders-list {
+        max-width: 290px;
+        margin: 18px auto 0;
+    }
+        .section-we-know .lenders-list > li {
+            float: none;
+            width: 100%;
+        }
+        .section-we-know .lender-info {
+            padding: 16px 26px 31px;
+            border-left: 1px solid #d1d1d1;
+            border-right: 1px solid #d1d1d1;
+        }
+        .section-we-know .lender-info:before,
+        .section-we-know .lender-info:after {
+            content: none;
+        }
+            .section-we-know .lender-name {
+                font-size: 16px;
+                letter-spacing: .01em;
+            }
+            .section-we-know .lender-position {
+                font-size: 16px;
+                letter-spacing: .01em;
+            }
+            .lender-info-list {
+                margin-top: 15px;
+                margin-bottom: 35px;
+            }
+                .lender-info-list > span {
+                    margin-bottom: 0;
+                    padding-left: 12px;
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+                .lender-info-list > span:before {
+                    width: 3px;
+                    height: 3px;
+                }
+                .lender-call {
+                    margin-bottom: 1px;
+                    letter-spacing: .05em;
+                }
+                .lender-phone {
+                    font-size: 14px;
+                }
+                .lender-id {
+                    position: absolute;
+                    right: 21px;
+                    bottom: 33px;
+                    font-size: 12px;
+                }
+.section-committed {
+    padding-bottom: 60px;
+}
+    .section-committed .section-title {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .section-committed .left-box,
+    .section-committed .right-box {
+        float: none;
+        padding: 0;
+        width: 100%;
+    }
+    .section-committed .left-box {
+        padding-bottom: 20px;
+    }
+    .section-committed .right-box {}
+        .committed-title {
+            font-size: 20px;
+        }
+        .committed-list {
+            font-size: 16px;
+        }
+
+    .content-title {
+        font-size: 36px;
+    }
+    .section-content .sidebar {
+        float: none;
+        max-width: 100%;
+    }
+    .section-content .content-wrap {
+        float: none;
+        max-width: 100%;
+    }
+    .post-nav {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        padding-top: 20px;
+    }
+    .prev-box,
+    .next-box {
+        float: left;
+        width: 50%;
+    }
+    .prev-box {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .next-box {
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+        .prev, .next {
+            margin-bottom: 2px;
+            font-size: 11px;
+        }
+        .prev:after {
+            left: -20px;
+        }
+        .next:after {
+            right: -20px;
+        }
+        .post-nav-title {
+            display: block;
+            font-size: 14px;
+            line-height: 1.1;
+        }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
