@@ -349,6 +349,75 @@ a.btn-login:focus:after,
     color: #ffffff;
     background-color: #005DE8;
 }
+
+.select-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 320px;
+    width: 100%; }
+.select-wrap:after {
+    position: absolute;
+    content: '';
+    z-index: 100;
+    width: 34px;
+    height: 34px;
+    right: 1px;
+    top: 1px;
+    color: #202020;
+    background: #F1F1F1;
+    pointer-events: none;
+}
+.select-wrap:before {
+    position: absolute;
+    content: '\e900';
+    z-index: 101;
+    right: 17px;
+    top: 11px;
+    font-size: 11px;
+    font-family: 'icomoon-aab' !important;
+    color: #202020;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    pointer-events: none;
+}
+    select {
+        min-height: 36px;
+        padding: 8px 0 6px 10px;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.25;
+        border: 1px solid #e5e5e5;
+        background-color: #F1F1F1;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        letter-spacing: 0.02em;
+        color: #202020;
+    }
+    select:focus,
+    select:hover {
+        /*border-bottom: 2px solid #005aff;*/
+    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -949,11 +1018,6 @@ a.btn-login:focus:after,
             font-size: 13px;
             line-height: 1.4;
             color: #ffffff;
-        }
-        a.forgot:hover,
-        .forgot:focus {
-            color: #005de8;
-            text-decoration: none;
         }
 
 
@@ -1617,14 +1681,10 @@ a.btn-login:focus:after,
         margin-bottom: 42px;
         font-size: 42px;
     }
-    .page-menu-box {
-        display: table;
+    .page-menu-wrap {
         position: relative;
-        margin-top: 17px;
-        margin: 17px auto 0;
-        text-align: center;
     }
-    .page-menu-box:after {
+    .page-menu-wrap:after {
         position: absolute;
         z-index: 10;
         content: '';
@@ -1634,6 +1694,14 @@ a.btn-login:focus:after,
         bottom: -1px;
         background-color: #005CE7;
     }
+    .page-menu-box {
+        display: table;
+        position: relative;
+        margin-top: 17px;
+        margin: 17px auto 0;
+        text-align: center;
+    }
+
         .page-menu-name,
         .page-menu-list {
             display: table-cell;
@@ -2411,8 +2479,14 @@ a.btn-login:focus:after,
 .section-content.calculator .container {
     max-width: 1310px;
 }
+    .section-content.calculator .content-wrap {
+        max-width: calc(100% - 283px);
+    }
     .section-content.calculator .sidebar {
         max-width: 283px;
+    }
+    .container-select-box {
+        display: none;
     }
         .section-content.calculator .sidebar-box {
             max-width: 190px;
@@ -2469,12 +2543,10 @@ a.btn-login:focus:after,
                     .calculator-list > li a:focus:after {
                         color: #005de8;
                     }
-    .section-content.calculator .content-wrap {
-        max-width: calc(100% - 283px);
-    }
         .section-content.calculator .content-box {
             margin-top: 11px;
         }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

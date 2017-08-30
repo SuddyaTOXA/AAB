@@ -68,6 +68,11 @@
         max-width: 100%;
         padding-bottom: 10px;
     }
+    a.forgot:hover,
+    .forgot:focus {
+        color: #005de8;
+        text-decoration: none;
+    }
     .section-lender-detail .right-box {
         padding-left: 40px;
     }
@@ -426,6 +431,7 @@
         max-width: 320px;
         padding: 0 15px;
     }
+    .section-content.calculator .container,
     .section-committed .container {
         max-width: 320px;
     }
@@ -912,6 +918,15 @@
                 .lender-info {
                     min-height: 56px;
                 }
+.section-our-lenders {
+    padding-top: 20px;
+}
+    .page-menu-wrap {
+        display: none;
+    }
+    .section-our-lenders .container-select-box {
+        margin-bottom: 20px;
+    }
 .section-more-links,
 .section-more-links.personal {
     padding-bottom: 20px;
@@ -1152,6 +1167,18 @@
             font-size: 14px;
             line-height: 1.1;
         }
+.section-content.calculator {
+    padding-top: 40px;
+}
+    .container-select-box {
+        display: block;
+    }
+    .section-content.calculator .content-wrap {
+        max-width: 100%;
+    }
+    .section-content.calculator .sidebar {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
