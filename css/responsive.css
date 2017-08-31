@@ -130,6 +130,24 @@
         padding-left: 20px;
         width: 320px;
     }
+    .section-title-box .section-title {
+        display: table-cell;
+        width: 100%;
+    }
+    .section-title-box .more-apy-box {
+        display: table-header-group;
+        width: 100%;
+    }
+    .section-title-box {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .section-title-box .more-apy-box .apy-box {
+        line-height: 170px;
+    }
+    .section-title-box .more-apy-box .apy-box span {
+        bottom: -120px;
+    }
 }
 
 @media all and (min-width: 1025px) {
@@ -427,6 +445,34 @@
     .calculator-form-list .input-style {
         max-width: 260px;
     }
+    .section-title-box {
+        margin-top: 0;
+    }
+    .section-title-box .section-title {
+        font-size: 54px;
+    }
+    .section-rewards-checking .section-title sup {
+        font-size: 12px;
+    }
+    .section-title-box .more-apy-box .apy-box {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .section-title-box .more-apy-box .apy-box span {
+        font-size: 18px;
+        left: 7px;
+        bottom: -90px;
+        font-weight: 400;
+    }
+    .section-title-box .more-apy-box .apy-box sup {
+        top: -10px;
+        padding-left: 5px;
+        font-size: 50px;
+    }
+    .advantages-list,
+    .text-box {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 960px) {
@@ -460,7 +506,8 @@
     .container,
     .section-content.calculator .container,
     .section-committed .container,
-    .section-faqs .container {
+    .section-faqs .container,
+    .section-rewards-checking .container {
         max-width: 320px;
     }
     #main-content {
@@ -905,7 +952,23 @@
     .content.big a {
         font-size: 15px;
     }
-
+    .content ol  ul {
+        margin-top: -1px;
+        margin-bottom: 0 !important;
+        padding-left: 21px;
+    }
+    .content.small {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+    .content.small ol > li {
+        margin-bottom: 4px;
+    }
+    .content.small ol > li:before {
+        left: 3px;
+        top: 0;
+        font-size: 10px;
+    }
     .section-our-lenders .section-title {
         font-size: 15px;
         max-width: 290px;
@@ -1301,6 +1364,103 @@
                 .big-price-box .price {
                     font-size: 35px;
                 }
+.section-rewards-checking {
+    padding-top: 33px;
+    padding-bottom: 130px;
+}
+    .breadcrumb-box {
+        padding-top: 8px;
+        padding-bottom: 6px;
+    }
+        .breadcrumb-list {
+            display: none;
+        }
+            a.open-account,
+            .open-account {
+                font-size: 13px;
+            }
+            a.open-account:after,
+            .open-account:after {
+                right: 14px;
+                font-size: 10px;
+                -webkit-font-smoothing: antialiased;
+                -moz-transform: translate(0, -40%);
+                -ms-transform: translate(0, -40%);
+                -webkit-transform: translate(0, -40%);
+                -o-transform: translate(0, -40%);
+                transform: translate(0, -40%);
+            }
+    .section-title-box {
+        display: table;
+        width: 100%;
+        margin-top: -16px;
+        margin-bottom: 14px;
+    }
+        .section-title-box .section-title {
+            font-size: 35px;
+        }
+            .section-rewards-checking .section-title sup {
+                font-size: 12px;
+            }
+            .section-title-box .more-apy-box .apy-box {
+                font-size: 70px;
+                line-height: 76px;
+            }
+            .section-title-box .more-apy-box .apy-box span {
+                font-size: 15px;
+                left: 7px;
+                bottom: -45px;
+                font-weight: 400;
+            }
+                .section-title-box .more-apy-box .apy-box sup {
+                    top: 1px;
+                    padding-left: 5px;
+                    font-size: 42px;
+                }
+.section-rewards-checking .content ul > li {
+    padding-left: 15px;
+}
+.section-rewards-checking .content ul > li:before {
+    left: 1px;
+}
+        .section-rewards-checking .content.big {
+            margin-bottom: 41px;
+            line-height: 1.5;
+        }
+        .section-rewards-checking .content.small {
+            margin-left: 2px;
+        }
+        .advantages-list {
+            font-size: 15px;
+        }
+            .advantages-list > li {
+                padding-left: 24px;
+                padding-bottom: 7px;
+                margin-bottom: 6px;
+            }
+            .advantages-list > li:before {
+                top: 4px;
+                left: 2px;
+            }
+        .btn-box {
+            margin-bottom: 36px;
+        }
+            .text-box,
+            .text-box a {
+                font-size: 15px;
+            }
+                .btn-box .a.btn,
+                .btn-box .btn {
+                    margin-bottom: 18px;
+                }
+    .two-call {
+        max-width: 100%;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+
+    }
+
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
