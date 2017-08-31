@@ -101,7 +101,9 @@ a:hover                        { color: #015CE9; text-decoration: underline; }
 .icon-search:before {
     content: "\e904";
 }
-
+.icon-ok:before {
+    content: "\e905";
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -2863,13 +2865,14 @@ a.btn-login:focus:after,
                     }
 /*-------------------------------------SECTION-REWARDS-CHECKING---------------------*/
 .section-rewards-checking {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 28px;
+    padding-bottom: 80px;
 }
     .section-rewards-checking .container {
         max-width: 1100px;
     }
         .section-rewards-checking .content.big {
+            margin-bottom: 58px;
             max-width: 770px;
             line-height: 1.6;
             letter-spacing: .02em;
@@ -2877,7 +2880,239 @@ a.btn-login:focus:after,
         .checking-wrap {
             max-width: 846px;
         }
-/*----------------------------------------------------------------------------------*/
+        .section-rewards-checking .section-title {
+            display: inline-block;
+            max-width: 600px;
+            font-size: 70px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            text-align: left;
+            vertical-align: top;
+        }
+            .section-rewards-checking .section-title sup {
+                position: relative;
+                top: -4px;
+                font-size: 19px;
+            }
+    .section-title-box {
+        margin-top: 68px;
+        margin-left: -3px;
+    }
+        .section-title-box .more-apy-box {
+            display: inline-block;
+            margin-top: -65px;
+            margin-left: 38px;
+            vertical-align: top;
+        }
+            .section-title-box .more-apy-box .apy-box {
+                font-size: 169px;
+                /*line-height: 133px;*/
+            }
+                .section-title-box .more-apy-box .apy-box sup {
+                    top: -5px;
+                    font-size: 85px;
+                }
+                .section-title-box .more-apy-box .apy-box span {
+                    font-size: 28px;
+                    right: auto;
+                    left: 6px;
+                    bottom: -53px;
+                }
+    .advantages-list {
+        max-width: 800px;
+        margin-bottom: 36px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+        -webkit-column-width: 200px;
+        -moz-column-width: 200px;
+        column-width: 200px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: .02em;
+    }
+        .advantages-list > li {
+            position: relative;
+            padding-left: 35px;
+            padding-bottom: 9px;
+            margin-bottom: 10px;
+        }
+        .advantages-list > li:before {
+            position: absolute;
+            content: '\e905';
+            top: 5px;
+            left: 0;
+            font-size: 13px;
+            font-family: 'icomoon-aab' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #d8d8d8;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+        .advantages-list > li:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #d9d9d9;
+        }
+    .btn-box {
+        margin-bottom: 88px;
+    }
+        .btn-box .a.btn,
+        .btn-box .btn {
+            margin-right: 71px;
+        }
+        .text-box {
+            position: relative;
+            top: 10px;
+            display: inline-block;
+            font-size: 18px;
+            letter-spacing: .02em;
+        }
+            .text-box a {
+                font-size: 18px;
+                text-decoration: underline;
+            }
+            .text-box a:hover,
+            .text-box a:focus {
+                text-decoration: none;
+            }
+    .two-call {
+        max-width: 600px;
+        margin-bottom: 36px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+    }
+    .breadcrumb-box {
+        position: relative;
+        padding-top: 13px;
+        padding-bottom: 9px;
+        background-color: #ffffff;
+    }
+    .breadcrumb-box:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #005CE8;
+    }
+        .breadcrumb-list  {
+            display: inline-block;
+            margin-right: 70px;
+        }
+            .breadcrumb-list > li {
+                position: relative;
+                display: inline-block;
+                margin: 0 3px;
+            }
+            .breadcrumb-list > li:after {
+                position: absolute;
+                content: '/';
+                top: 50%;
+                right: -7px;
+                color: #005ce8;
+                -moz-transform: translate(0, -55%);
+                -ms-transform: translate(0, -55%);
+                -webkit-transform: translate(0, -55%);
+                -o-transform: translate(0, -55%);
+                transform: translate(0, -55%);
+            }
+            .breadcrumb-list > li:last-child:after {
+                content: none;
+            }
+                .breadcrumb-list > li a,
+                .breadcrumb-list > li span {
+                    display: inline-block;
+                    padding: 10px 7px 10px;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    letter-spacing: .02em;
+                    color: #005CE8;
+                }
+                .breadcrumb-list > li strong,
+                .breadcrumb-list > li b {
+                    font-weight: 700;
+                }
+                .breadcrumb-list > li a:hover,
+                .breadcrumb-list > li a:focus {
+                    color: #292929;
+                    text-decoration: none;
+                }
+                .breadcrumb-list > li {}
+                a.open-account,
+                .open-account {
+                    position: relative;
+                    display: inline-block;
+                    padding: 10px 30px 10px 5px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: .02em;
+                    color: #005CE8;
+                }
+                a.open-account:after,
+                .open-account:after {
+                    position: absolute;
+                    content: '\e900';
+                    top: 50%;
+                    right: 7px;
+                    font-size: 14px;
+                    font-family: 'icomoon-aab' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    color: #005CE8;
+                    -webkit-transition: 0.2s;
+                    -moz-transition: 0.2s;
+                    -o-transition: 0.2s;
+                    transition: 0.2s;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-transform: translate(0, -50%);
+                    -ms-transform: translate(0, -50%);
+                    -webkit-transform: translate(0, -50%);
+                    -o-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+                a.open-account:hover,
+                a.open-account:focus,
+                .open-account:hover,
+                .open-account:focus {
+                    text-decoration: none;
+                    color: #292929;
+                }
+                a.open-account:hover:after,
+                a.open-account:focus:after,
+                .open-account:hover:after,
+                .open-account:focus:after {
+                    color: #292929;
+                }
+    /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
