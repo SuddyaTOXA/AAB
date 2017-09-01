@@ -2508,8 +2508,8 @@ input:focus:-moz-placeholder { opacity: 0; }
         .section-lender-detail .left-box img {
             display: none;
             margin-left: -20px;
-            max-width: calc(100% + 40px);
-            width: 100%;
+            width: -webkit-calc(100% + 40px);
+            width: calc(100% + 40px);
         }
         .section-lender-detail .right-box {
             position: relative;

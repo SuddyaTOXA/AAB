@@ -1120,7 +1120,8 @@
     }
         .section-lender-detail .left-box img {
             margin-left: -15px;
-            max-width: calc(100% + 30px);
+            width: -webkit-calc(100% + 30px);
+            width: calc(100% + 30px);
         }
     .section-lender-detail .right-box {
         padding-top: 23px;
