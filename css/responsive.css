@@ -405,6 +405,9 @@
     .section-committed .section-title {
         font-size: 54px;
     }
+    .section-title {
+        font-size: 54px;
+    }
     .committed-title {
         font-size: 26px;
     }
@@ -494,7 +497,22 @@
     .video-item-desc {
         font-size: 13px;
     }
-
+    .facebook-list > li {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+    .facebook-list > li:nth-child(6n+1) {
+        clear: none;
+    }
+    .facebook-list > li:nth-child(4n+1) {
+        clear: both;
+    }
+    .different-title {
+        font-size: 26px;
+    }
+    .different-desc {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 960px) {
@@ -503,6 +521,12 @@
     }
     .video-list > li {
         width: 33.33%;
+    }
+    .video-list > li:nth-child(4n + 1) {
+        clear: none;
+    }
+    .video-list > li:nth-child(3n + 1) {
+        clear: both;
     }
 }
 
@@ -518,6 +542,16 @@
     }
     .video-wrap {
         height: 300px;
+    }
+    .facebook-list > li {
+        width: 33.33%;
+        padding-bottom: 33.33%;
+    }
+    .facebook-list > li:nth-child(4n+1) {
+        clear: none;
+    }
+    .facebook-list > li:nth-child(3n+1) {
+        clear: both;
     }
 }
 
@@ -1523,12 +1557,45 @@
             padding-right: 5px;
             margin-bottom: 35px;
         }
+        .video-list > li:nth-child(3n + 1) {
+            clear: none;
+        }
+        .video-list > li:nth-child(2n + 1) {
+            clear: both;
+        }
         .video-item-title {
             font-size: 15px;
         }
         .video-item-desc {
             font-size: 11px;
         }
+    .section-community {
+        display: none;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .section-different {
+        padding-bottom: 80px;
+    }
+        .section-different .section-title {
+            margin-bottom: 36px;
+        }
+        .different-list {
+            margin-bottom: -30px;
+        }
+            .different-list > li {
+                float: none;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 24px;
+            }
+            .different-title {
+                font-size: 20px;
+            }
+            .different-desc {
+                font-size: 14px;
+            }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {

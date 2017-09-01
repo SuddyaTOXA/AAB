@@ -3283,7 +3283,7 @@ input:focus:-moz-placeholder { opacity: 0; }
             letter-spacing: .02em;
         }
 
-
+/*-------------------------------------SECTION-VIDEO-GRID---------------------------*/
 .section-video-grid {
     padding-top: 21px;
     padding-bottom: 60px;
@@ -3339,6 +3339,9 @@ input:focus:-moz-placeholder { opacity: 0; }
                     margin-bottom: 53px;
                     padding: 0 18px;
                 }
+                .video-list > li:nth-child(4n + 1) {
+                    clear: both;
+                }
                 .video-list a {
                     display: block;
                 }
@@ -3379,6 +3382,153 @@ input:focus:-moz-placeholder { opacity: 0; }
                             margin-left: -5px;
                             font-weight: 700;
                         }
+/*-------------------------------------SECTION-VIDEO-GRID---------------------------*/
+.section-different {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+    .section-different .section-title {
+        margin-bottom: 57px;
+    }
+        .different-list {
+            overflow: hidden;
+            max-width: 986px;
+            margin: 0 auto -67px;
+            text-align: center;
+        }
+            .different-list > li {
+                float: left;
+                width: 50%;
+                margin-bottom: 67px;
+                padding: 0 5px;
+            }
+                .different-box {
+                    margin: 0 auto;
+                    max-width: 300px;
+                }
+                    .different-title {
+                        margin-bottom: 6px;
+                        font-size: 36px;
+                        line-height: 1.2;
+                    }
+                    .different-desc {
+                        font-size: 18px;
+                        letter-spacing: .01em;
+                        word-spacing: -.07em;
+                    }
+/*-------------------------------------SECTION-COMMUNITY----------------------------*/
+.section-community {
+    padding-top: 90px;
+}
+    .section-community .section-title {
+        margin-bottom: 40px;
+    }
+    .facebook-list {
+        overflow: hidden;
+    }
+        .facebook-list > li {
+            float: left;
+            position: relative;
+            width: 16.666%;
+            padding-bottom: 16.666%;
+            border: 3px solid #ffffff;
+        }
+        .facebook-list > li:nth-child(6n+1) {
+            clear: both;
+        }
+            .facebook-img-box {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+            }
+            .facebook-img-box:before {
+                position: absolute;
+                opacity: 0;
+                z-index: 105;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 92, 232, .63);
+                -webkit-transition: 0.35s;
+                -khtml-transition: 0.35s;
+                -moz-transition: 0.35s;
+                -ms-transition: 0.35s;
+                -o-transition: 0.35s;
+                transition: 0.35s;
+            }
+                .facebook-img-box img {
+                    position: absolute;
+                    z-index: 100;
+                    min-height: 100%;
+                    min-width: 100%;
+                    width: auto;
+                    height: auto;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%) scale(1);
+                    -khtml-transform: translate(-50%, -50%) scale(1);
+                    -moz-transform: translate(-50%, -50%) scale(1);
+                    -ms-transform: translate(-50%, -50%) scale(1);
+                    -o-transform: translate(-50%, -50%) scale(1);
+                    transform: translate(-50%, -50%) scale(1);
+                    -webkit-transition-duration: 0.35s;
+                    -khtml-transition-duration: 0.35s;
+                    -moz-transition-duration: 0.35s;
+                    -ms-transition-duration: 0.35s;
+                    -o-transition-duration: 0.35s;
+                    transition-duration: 0.35s;
+                }
+                .facebook-img-box:hover img {
+                    -webkit-transform: translate(-50%, -50%) scale(1.5);
+                    -khtml-transform: translate(-50%, -50%) scale(1.5);
+                    -moz-transform: translate(-50%, -50%) scale(1.5);
+                    -ms-transform: translate(-50%, -50%) scale(1.5);
+                    -o-transform: translate(-50%, -50%) scale(1.5);
+                    transform: translate(-50%, -50%) scale(1.5);
+                }
+                .facebook-list > li a:hover .facebook-hover-text,
+                .facebook-list > li a:focus .facebook-hover-text {
+                    opacity: 1;
+                }
+                .facebook-list > li a:hover .facebook-img-box:before,
+                .facebook-list > li a:focus .facebook-img-box:before {
+                    opacity: 1;
+                }
+
+                /*.facebook-img-box:hover .facebook-hover-text {*/
+                    /*opacity: 1;*/
+                /*}*/
+                /*.facebook-img-box:hover:before {*/
+                    /*opacity: 1;*/
+                /*}*/
+                .facebook-hover-text {
+                    position: absolute;
+                    opacity: 0;
+                    z-index: 110;
+                    display: block;
+                    width: calc(100% - 20px);
+                    top: 50%;
+                    left: 50%;
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 24px;
+                    line-height: 1.4;
+                    -webkit-transform: translate(-50%, -50%);
+                    -khtml-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    -webkit-transition: 0.35s;
+                    -khtml-transition: 0.35s;
+                    -moz-transition: 0.35s;
+                    -ms-transition: 0.35s;
+                    -o-transition: 0.35s;
+                    transition: 0.35s; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
