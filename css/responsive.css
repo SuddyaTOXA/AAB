@@ -1337,7 +1337,8 @@
             margin-bottom: 16px;
         }
         .calculator-form-list > li.two-el .input-style {
-            max-width: calc(100% - 124px);
+            max-width: -webkit-calc(100% - 126px);
+            max-width: calc(100% - 126px);
         }
         .calculator-form-list > li.two-el .input-style.small {
             margin-left: 10px;
