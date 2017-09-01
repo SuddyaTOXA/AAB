@@ -3285,6 +3285,10 @@ input:focus:-moz-placeholder { opacity: 0; }
     .section-video-grid  .container {
         max-width: 1286px;
     }
+    .section-video-grid .page-menu-wrap .container {
+        max-width: 100%;
+        padding: 0;
+    }
         .grid-box {
             max-width: 1090px;
         }
