@@ -487,6 +487,7 @@
         -moz-border-radius: 1em;
         -ms-border-radius: 1em;
         -o-border-radius: 1em;
+        border-radius: 1em;
     }
     .video-title {
         font-size: 38px;
@@ -758,7 +759,7 @@
                     .apy-box sup {
                         font-size: 12px;
                         top: 1px;
-                        padding-left: 0px;
+                        padding-left: 0;
                     }
                     .apy-box span {
                         bottom: 3px;

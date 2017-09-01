@@ -305,7 +305,6 @@ a.btn-login:focus:after,
     padding: 19px 10px 19px;
     border: none;
     color: #545454;
-    background-color: #F1F1F1;
     text-align: center;
     background-color: transparent;
 }
@@ -448,13 +447,13 @@ input:focus:-moz-placeholder { opacity: 0; }
 .wrapper {
     position: relative;
     min-height: 100%;
-    margin-bottom: -225px;
+    margin-bottom: -677px;
 }
 .wrapper:after {
     content: '';
     display: block;
     width: 100%;
-    height: 225px;
+    height: 677px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
