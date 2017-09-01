@@ -337,6 +337,35 @@ a.btn-login:focus:after,
 .input-style::-moz-placeholder { color: #545454; }
 .input-style:-ms-input-placeholder { color: #545454; }
 .input-style:-moz-placeholder { color: #545454; }
+
+input::-webkit-input-placeholder {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+input::-moz-placeholder {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+input:-ms-input-placeholder {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+input:-moz-placeholder {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+input:focus::-webkit-input-placeholder { opacity: 0; }
+input:focus::-moz-placeholder { opacity: 0; }
+input:focus:-ms-input-placeholder { opacity: 0; }
+input:focus:-moz-placeholder { opacity: 0; }
 .search-zip-style {
     padding: 18px 80px 13px 47px;
 }
@@ -353,7 +382,7 @@ a.btn-login:focus:after,
 .select-wrap:after {
     position: absolute;
     content: '';
-    z-index: 100;
+    z-index: 98;
     width: 34px;
     height: 34px;
     right: 1px;
@@ -365,7 +394,7 @@ a.btn-login:focus:after,
 .select-wrap:before {
     position: absolute;
     content: '\e900';
-    z-index: 101;
+    z-index: 99;
     right: 17px;
     top: 11px;
     font-size: 11px;
@@ -1026,6 +1055,7 @@ a.btn-login:focus:after,
     opacity: 0.7; }
 
 .mobile-menu {
+    padding-top: 15px;
     padding-bottom: 20px;
     max-width: 290px;
     margin: 0 auto;
@@ -1204,10 +1234,10 @@ a.btn-login:focus:after,
     font-weight: 300;
     line-height: 1.65;
 }
-
-.content .big {
-
+.content > * {
+    display: block;
 }
+
 .inverse .content { color: #ffffff; }
 .content * { margin-bottom: 26px; }
 .content *:last-child { margin-bottom: 0; }
@@ -1622,6 +1652,7 @@ a.btn-login:focus:after,
 /*-------------------------------------SECTION-INTERESTING-------------------------*/
 .section-interesting {
     position: relative;
+    border-top: 1px solid #f5f5f5;
 }
     .section-interesting .container {
         position: relative;
@@ -1730,10 +1761,13 @@ a.btn-login:focus:after,
         bottom: -1px;
         background-color: #005CE7;
     }
+    .page-menu-wrap .container {
+        max-width: 1160px;
+    }
     .page-menu-box {
         display: table;
         position: relative;
-        margin: 17px auto 0;
+        margin: 17px 0 0;
         text-align: center;
     }
         .page-menu-name,
@@ -2401,8 +2435,8 @@ a.btn-login:focus:after,
                         right: -27px;
                     }
                     .prev-box a:hover .prev:after,
-                    .next-box a:focus .next:after,
-                    .prev-box a:hover .prev:after,
+                    .prev-box a:focus .prev:after,
+                    .next-box a:hover .next:after,
                     .next-box a:focus .next:after {
                         color: #005de8;
                     }
