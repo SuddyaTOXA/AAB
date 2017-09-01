@@ -1591,6 +1591,7 @@ input:focus:-moz-placeholder { opacity: 0; }
         vertical-align: middle;
     }
     .talk-box {
+        margin: 0 auto;
         max-width: 530px;
     }
     .section-title {
@@ -1847,6 +1848,7 @@ input:focus:-moz-placeholder { opacity: 0; }
             }
     .lenders-list {
         overflow: hidden;
+        margin-bottom: -30px;
     }
         .lenders-list > li {
             float: left;

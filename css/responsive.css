@@ -1007,7 +1007,7 @@
     }
         .lenders-list {
             max-width: 375px;
-            margin: 0 auto;
+            margin: 0 auto 0;
         }
             .lenders-list > li {
                 margin-bottom: 0;
@@ -1552,7 +1552,9 @@
 }
 
 @media all and (max-width: 420px) {
-
+    .section-talk {
+        background-position-x: -50px;
+    }
 }
 
 @media all and (max-width: 380px) {
