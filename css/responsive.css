@@ -494,6 +494,7 @@
     .video-item-desc {
         font-size: 13px;
     }
+
 }
 
 @media all and (max-width: 960px) {
@@ -991,6 +992,9 @@
     .content.small {
         font-size: 10px;
         line-height: 1.6;
+    }
+    .content.small a {
+        font-size: 10px;
     }
     .content.small ol > li {
         margin-bottom: 4px;
