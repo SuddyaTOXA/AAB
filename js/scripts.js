@@ -55,4 +55,17 @@ jQuery(document).ready(function($) {
         $(document.body).toggleClass('overflow');
     });
 
+    //for niceScroll
+    if ( $('.nice-scroll').length ) {
+        console.log("true");
+        $(".nice-scroll").niceScroll({
+            autohidemode: false,
+            cursorcolor:"#d9d9d9",
+            cursorwidth:"7px",
+            cursorborderradius: "1em",
+            cursorborder: "1px solid #d9d9d9",
+            background:"rgba(238,238,238,1)"
+        });
+    }
+
 });

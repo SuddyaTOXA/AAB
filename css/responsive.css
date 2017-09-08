@@ -10,6 +10,9 @@
     .section-lender-detail .container {
         min-height: 760px;
     }
+    .call-box {
+        margin-right: 40px;
+    }
 }
 @media all and (max-width: 1490px) {
     .table-box {
