@@ -3549,6 +3549,14 @@ input:focus:-moz-placeholder { opacity: 0; }
         .section-banner.about .left-box {
             max-width: 440px;
         }
+        .section-banner.about .right-box {
+            display: none;
+            margin: 0 auto;
+        }
+            .section-banner.about .right-box img {
+                display: block;
+                width: 100%;
+            }
             .section-banner.about .banner-title {
                 margin-bottom: 16px;
                 font-size: 69px;

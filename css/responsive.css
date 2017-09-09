@@ -1600,6 +1600,130 @@
             .different-desc {
                 font-size: 14px;
             }
+
+.section-banner.about {
+    padding-top: 51px;
+    padding-bottom: 0;
+    min-height: 454px;
+    background-size: contain;
+    background-image: none !important;
+}
+    .section-banner.about .left-box {
+        margin-bottom: 19px;
+    }
+    .section-banner.about .right-box {
+        display: block;
+        max-width: 422px;
+    }
+        .section-banner.about .banner-title {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        .banner-desc {
+            margin-left: 1px;
+            font-size: 15px;
+            letter-spacing: 0;
+        }
+
+        .anchor-box {
+            top: -32px;
+            width: 118px;
+            height: 118px;
+            padding-top: 16px;
+        }
+            .anchor-box a {
+                font-size: 12px;
+            }
+                .anchor-box .icon-arrow {
+                    width: 10px;
+                    height: 10px;
+                    font-size: 10px;
+                }
+    .about-box {
+        display: none;
+    }
+.section-history {}
+    .history-list {
+        overflow: visible;
+    }
+    .history-list:before {
+        left: 0;
+        top: 15px;
+    }
+        .history-list > li {
+            float: none;
+            width: 100%;
+            margin-bottom: 40px !important;
+            text-align: left;
+        }
+        .history-list > li:nth-child(2),
+        .history-list > li:nth-child(odd) {
+            margin-top: 0;
+            text-align: left;
+        }
+        .history-list > li:before {
+            width: 5px;
+            height: 5px;
+            top: 18px;
+            left: 1px;
+            right: auto;
+            border-width: 4px;
+        }
+        .history-list > li:nth-child(even):before {
+            left: 1px;
+        }
+            .history-wrap {
+                padding-right: 0;
+                padding-left: 42px;
+            }
+            .history-list > li:nth-child(even) .history-wrap {
+                padding-right: 0;
+                padding-left: 42px;
+            }
+            .history-list > li:nth-child(6n) .history-wrap {
+                padding-left: 90px;
+            }
+            .history-list > li:nth-child(6n - 4) .history-wrap {
+                padding-left: 66px;
+            }
+            .history-list > li:nth-child(6n -3) .history-wrap {
+                padding-right: 0;
+                padding-left: 90px;
+            }
+            .history-list > li:nth-child(6n -1) .history-wrap {
+                padding-right: 0;
+                padding-left: 66px;
+            }
+            .history-list > li:nth-child(1) .history-wrap {
+                padding-right: 0;
+                padding-left: 42px;
+            }
+            .history-wrap:before {
+                top: 18px;
+            }
+            .history-wrap:after {
+                top: 24px;
+            }
+                .history-box {
+                    padding-right: 0;
+                    padding-left: 12px;
+                    min-height: auto;
+                }
+                .history-list > li:nth-child(even) .history-box {
+                    padding-left: 12px;
+                }
+                .history-box:before {
+                    right: auto;
+                    left: 0;
+                    height: 36px;
+                }
+                    .year {
+                        font-size: 26px;
+                    }
+                    .history-desc {
+                        font-size: 13px;
+                    }
+
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
