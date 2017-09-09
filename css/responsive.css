@@ -295,16 +295,31 @@
     .desktop-logo { display: none; }
     .mob-logo { display: block; }
     .hide-el { display: block; }
-    /*.section-banner.about {*/
-        /*background-image: none !important;*/
-    /*}*/
-    /*.section-banner.about .left-box {*/
-        /*margin-bottom: 19px;*/
-    /*}*/
-    /*.section-banner.about .right-box {*/
-        /*display: block;*/
-        /*max-width: 860px;*/
-    /*}*/
+
+    .mob-map-nav {
+        display: block;
+    }
+    /*.top-bar,*/
+    .top-bar {
+        padding-left: 20px;
+        height: 100%;
+        z-index: 60;
+        left: auto;
+        right: -100%;
+        opacity: 0;
+    }
+    .top-bar.showing {
+        right: 0;
+        opacity: 1;
+    }
+    .control-bar {
+        display: none;
+    }
+    .section-map {
+        min-height: 460px;
+        height:  -webkit-calc(100vh - 58px);
+        height: calc(100vh - 58px);
+    }
 }
 
 @media all and (max-width: 991px) {

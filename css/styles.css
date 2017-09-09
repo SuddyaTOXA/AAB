@@ -3831,6 +3831,35 @@ input:focus:-moz-placeholder { opacity: 0; }
     overflow: hidden;
     min-height: 914px;
 }
+    .mob-map-nav {
+        display: none;
+    }
+        .mob-toggle {
+            position: absolute;
+            z-index: 40;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: #005de8;
+            cursor: pointer;
+        }
+        .mob-toggle .fa {
+            color: #ffffff;
+            line-height: 40px;
+        }
+        .control-bar-toggle {
+          left: 0;
+        }
+        .top-bar-toggle {
+            right: 0;
+        }
+        .control-bar-toggle .fa {
+
+        }
+        .top-bar-toggle .fa {
+
+        }
     .map {
         position: absolute;
         z-index: 1;
@@ -3855,7 +3884,7 @@ input:focus:-moz-placeholder { opacity: 0; }
         }
     .top-bar {
         overflow: hidden;
-        position: relative;
+        position: absolute;
         margin-bottom: 1px;
         z-index: 10;
         left: 0;
@@ -3864,6 +3893,10 @@ input:focus:-moz-placeholder { opacity: 0; }
         /*height: 110px;*/
         padding: 23px 20px 25px 490px;
         background-color: #ffffff;
+        -webkit-transition: .35s;
+        -moz-transition: .35s;
+        -o-transition: .35s;
+        transition: .35s;
     }
     .top-bar:after {
         position: absolute;
