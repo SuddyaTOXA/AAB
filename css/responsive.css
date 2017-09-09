@@ -26,12 +26,20 @@
         bottom: auto;
         margin-top: 10px;
     }
+
+
 }
 @media all and (max-width: 1440px) {
     .main-nav > ul > li > a {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .section-banner.about {
+        background-size: 77% auto;
+    }
+        .about-box {
+        display: none;
+        }
 }
 @media all and (max-width: 1400px) {
     .lenders-list.home-loans .lender-info {
@@ -92,6 +100,11 @@
         .section-lender-detail .left-box img {
             display: block;
         }
+    .section-banner.about {
+        padding-top: 60px;
+        min-height: 540px;
+        background-size: 70% auto;
+    }
 }
 
 @media all and (max-width: 1120px) {
@@ -282,6 +295,16 @@
     .desktop-logo { display: none; }
     .mob-logo { display: block; }
     .hide-el { display: block; }
+    /*.section-banner.about {*/
+        /*background-image: none !important;*/
+    /*}*/
+    /*.section-banner.about .left-box {*/
+        /*margin-bottom: 19px;*/
+    /*}*/
+    /*.section-banner.about .right-box {*/
+        /*display: block;*/
+        /*max-width: 860px;*/
+    /*}*/
 }
 
 @media all and (max-width: 991px) {
@@ -517,6 +540,61 @@
     .different-desc {
         font-size: 16px;
     }
+    .section-banner.about {
+        background-size: 75% auto;
+    }
+    .section-banner.about .banner-title {
+        font-size: 46px;
+    }
+    .banner-desc {
+        max-width: 300px;
+        font-size: 18px;
+    }
+    .anchor-box a {
+        font-size: 19px;
+    }
+.section-history {
+    padding-bottom: 54px;
+}
+    .history-wrap {
+        position: relative;
+        display: inline-block;
+        padding-right: 61px;
+    }
+    .history-list > li:nth-child(even) .history-wrap {
+        padding-right: 0;
+        padding-left: 46px;
+    }
+    .history-list > li:nth-child(6n) .history-wrap {
+        padding-left: 147px;
+    }
+    .history-list > li:nth-child(6n - 4) .history-wrap {
+        padding-left: 94px;
+    }
+    .history-list > li:nth-child(6n -3) .history-wrap {
+        padding-right: 150px;
+    }
+    .history-list > li:nth-child(6n -1) .history-wrap,
+    .history-list > li:nth-child(1) .history-wrap {
+        padding-right: 92px;
+    }
+        .history-box {
+            padding-right: 20px;
+        }
+        .history-list > li:nth-child(even) .history-box {
+            padding-left: 20px;
+        }
+        .history-box:before {
+            top: 6px;
+        }
+            .year {
+                margin-top: -6px;
+                margin-bottom: 4px;
+                font-size: 46px;
+            }
+            .history-desc {
+                font-size: 15px;
+            }
 }
 
 @media all and (max-width: 960px) {
@@ -1580,6 +1658,7 @@
         font-size: 32px;
     }
     .section-different {
+        padding-top: 40px;
         padding-bottom: 80px;
     }
         .section-different .section-title {
@@ -1661,6 +1740,12 @@
             margin-top: 0;
             text-align: left;
         }
+        .history-list > li:nth-child(even) {
+            margin-top: 0;
+        }
+        .history-list > li:last-child {
+            margin-bottom: 0 !important;
+        }
         .history-list > li:before {
             width: 5px;
             height: 5px;
@@ -1714,16 +1799,21 @@
                 }
                 .history-box:before {
                     right: auto;
+                    top: 0;
                     left: 0;
                     height: 36px;
                 }
                     .year {
+                        margin-top: 0;
                         font-size: 26px;
                     }
                     .history-desc {
                         font-size: 13px;
                     }
-
+.section-history {
+    padding-top: 78px;
+    padding-bottom: 40px;
+}
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
