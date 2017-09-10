@@ -4076,9 +4076,11 @@ input:focus:-moz-placeholder { opacity: 0; }
                     background-color: #005de8;
                 }
 
-        .tabs-box {}
+        .tabs-box {
+            padding-bottom: 20px;
+        }
             .nice-scroll {
-                max-height: 789px;
+                max-height: 769px;
             }
                 .nicescroll-rails {
                     width: 7px !important;
@@ -4104,6 +4106,9 @@ input:focus:-moz-placeholder { opacity: 0; }
                         }
                         .map-item-list > li.map-item-info {
                             border-top: 1px solid #D6D6D6;
+                        }
+                        .map-item-list > li:last-child {
+                            border-bottom: none;
                         }
                             .tab-box {
                                 position: relative;
