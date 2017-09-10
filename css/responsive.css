@@ -306,6 +306,8 @@
         z-index: 60;
         left: auto;
         right: -100%;
+        padding-left: 15px;
+        padding-right: 15px;
         opacity: 0;
     }
     .top-bar.showing {
@@ -313,13 +315,32 @@
         opacity: 1;
     }
     .control-bar {
-        display: none;
+        width: 100%;
+        z-index: 60;
+        left: -100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        opacity: 0;
+    }
+    .control-bar.showing {
+        left: 0;
+        opacity: 1;
     }
     .section-map {
         min-height: 460px;
         height:  -webkit-calc(100vh - 58px);
         height: calc(100vh - 58px);
     }
+    .top-bar-list,
+    .nav-tabs-table,
+    .nice-scroll {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+    .nav-tabs-box {
+        margin-right: 0;
+    }
+
 }
 
 @media all and (max-width: 991px) {
@@ -610,6 +631,40 @@
             .history-desc {
                 font-size: 15px;
             }
+    a.map-item-title, .map-item-title {
+        font-size: 18px;
+    }
+    .distance,
+    .hour-desc,
+    .map-item-desc {
+        font-size: 15px;
+    }
+    .nav-tabs-table a {
+        font-size: 12px;
+    }
+    .a.map-hour, .map-hour {
+        font-size: 11px;
+    }
+    .hour-title {
+        font-size: 11px;
+    }
+    .hour-desc.small,
+    .hour-desc.small a,
+    .hour-desc.small a {
+        font-size: 12px;
+    }
+    a.map-item-title.small, .map-item-title.small {
+        font-size: 15px;
+    }
+    .top-bar-item-title {
+        font-size: 11px;
+    }
+    a.top-bar-tel, .top-bar-tel {
+        font-size: 24px;
+    }
+    .top-bar-info {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 960px) {
@@ -1829,6 +1884,46 @@
     padding-top: 78px;
     padding-bottom: 40px;
 }
+    .top-bar-list,
+    .nav-tabs-table,
+    .nice-scroll {
+        max-width: 320px;
+    }
+    a.map-item-title, .map-item-title {
+        font-size: 16px;
+    }
+    .distance,
+    .hour-desc,
+    .map-item-desc {
+        font-size: 14px;
+    }
+    .nav-tabs-table a {
+        font-size: 11px;
+    }
+    .a.map-hour, .map-hour {
+        font-size: 10px;
+    }
+    .hour-title {
+        font-size: 10px;
+    }
+    .hour-desc.small,
+    .hour-desc.small a,
+    .hour-desc.small a {
+        font-size: 11px;
+    }
+    a.map-item-title.small, .map-item-title.small {
+        font-size: 14px;
+    }
+    .top-bar-item-title {
+        font-size: 10px;
+    }
+    a.top-bar-tel, .top-bar-tel {
+        font-size: 20px;
+    }
+    .top-bar-info {
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {

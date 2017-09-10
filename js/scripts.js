@@ -71,10 +71,12 @@ jQuery(document).ready(function($) {
     //for map controls
     $('.control-bar-toggle').on('click', function(){
         $('.control-bar').toggleClass('showing');
+        $('.control-bar-toggle').toggleClass('open');
         $(document.body).toggleClass('overflow');
     });
     $('.top-bar-toggle').on('click', function(){
         $('.top-bar').toggleClass('showing');
+        $('.top-bar-toggle').toggleClass('open');
         $(document.body).toggleClass('overflow');
     });
 });

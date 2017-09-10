@@ -3848,17 +3848,32 @@ input:focus:-moz-placeholder { opacity: 0; }
             color: #ffffff;
             line-height: 40px;
         }
+        .mob-toggle .icon-close {
+            color: #ffffff;
+            line-height: 40px;
+        }
         .control-bar-toggle {
           left: 0;
         }
         .top-bar-toggle {
             right: 0;
         }
-        .control-bar-toggle .fa {
 
+        .control-bar-toggle.open,
+        .top-bar-toggle.open {
+            z-index: 65;
         }
-        .top-bar-toggle .fa {
-
+        .control-bar-toggle .icon-close,
+        .top-bar-toggle .icon-close {
+            display: none;
+        }
+        .control-bar-toggle.open .fa,
+        .top-bar-toggle.open .fa {
+            display: none;
+        }
+        .control-bar-toggle.open .icon-close,
+        .top-bar-toggle.open .icon-close {
+            display: inline-block;
         }
     .map {
         position: absolute;
@@ -3998,6 +4013,10 @@ input:focus:-moz-placeholder { opacity: 0; }
         -webkit-box-shadow:  0 0 13px 0 rgba(0, 0, 0, 0.35);
         -moz-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.35);
         box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.35);
+        -webkit-transition: .35s;
+        -moz-transition: .35s;
+        -o-transition: .35s;
+        transition: .35s;
     }
         .nav-tabs-box {
             margin-right: 37px;
