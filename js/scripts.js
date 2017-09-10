@@ -57,8 +57,7 @@ jQuery(document).ready(function($) {
 
     //for niceScroll
     if ( $('.nice-scroll').length ) {
-        console.log("true");
-        $(".nice-scroll").niceScroll({
+       $(".nice-scroll").niceScroll({
             autohidemode: false,
             cursorcolor:"#d9d9d9",
             cursorwidth:"7px",
@@ -66,7 +65,18 @@ jQuery(document).ready(function($) {
             cursorborder: "1px solid #d9d9d9",
             background:"rgba(238,238,238,1)"
         });
+
+        $(window).on('resize', function() {
+            setTimeout(function () {
+                console.log('resize');
+                var scroll =  $(".nice-scroll").getNiceScroll();
+                scroll.resize();
+            },200);
+
+        });
     }
+
+
 
     //for map controls
     $('.control-bar-toggle').on('click', function(){
