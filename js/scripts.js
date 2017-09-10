@@ -68,7 +68,6 @@ jQuery(document).ready(function($) {
 
         $(window).on('resize', function() {
             setTimeout(function () {
-                console.log('resize');
                 var scroll =  $(".nice-scroll").getNiceScroll();
                 scroll.resize();
             },200);
