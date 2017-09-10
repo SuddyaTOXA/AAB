@@ -3829,7 +3829,8 @@ input:focus:-moz-placeholder { opacity: 0; }
 .section-map {
     position: relative;
     overflow: hidden;
-    min-height: 914px;
+    height:  -webkit-calc(100vh - 74px);
+    height: calc(100vh - 74px);
 }
     .mob-map-nav {
         display: none;
@@ -4008,7 +4009,7 @@ input:focus:-moz-placeholder { opacity: 0; }
         left: 0;
         width: 460px;
         height: 100%;
-        padding: 45px 8px 40px 35px;
+        padding: 45px 8px 20px 35px;
         background-color: #ffffff;
         -webkit-box-shadow:  0 0 13px 0 rgba(0, 0, 0, 0.35);
         -moz-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.35);
@@ -4077,10 +4078,11 @@ input:focus:-moz-placeholder { opacity: 0; }
                 }
 
         .tabs-box {
-            padding-bottom: 20px;
+            /*padding-bottom: 20px;*/
         }
             .nice-scroll {
-                max-height: 769px;
+                height:  -webkit-calc(100vh - 220px);
+                height: calc(100vh - 220px);
             }
                 .nicescroll-rails {
                     width: 7px !important;

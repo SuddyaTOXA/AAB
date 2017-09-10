@@ -1924,6 +1924,10 @@
         font-size: 14px;
         line-height: 1.6;
     }
+    .nice-scroll {
+        height:  -webkit-calc(100vh - 200px);
+        height: calc(100vh - 200px);
+    }
 }
 
 @media (max-width: 767px) and (max-height: 480px) {
