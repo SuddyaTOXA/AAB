@@ -327,6 +327,12 @@ a.btn-login:focus:after,
     box-shadow: none;
     color: #292929;
     background-color: #F1F1F1;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     -o-transition: 0.25s;
