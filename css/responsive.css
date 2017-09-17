@@ -26,9 +26,12 @@
         bottom: auto;
         margin-top: 10px;
     }
-
-
+    .section-we-know .lender-info {
+        padding-left: 26px;
+        padding-right: ;
+    }
 }
+
 @media all and (max-width: 1440px) {
     .main-nav > ul > li > a {
         padding-left: 15px;
@@ -160,9 +163,6 @@
     }
     .section-title-box .more-apy-box .apy-box {
         line-height: 170px;
-    }
-    .section-title-box .more-apy-box .apy-box span {
-        bottom: -120px;
     }
     .video-wrap {
         height: 400px;
@@ -410,6 +410,12 @@
     .lenders-list > li:nth-child(3n+1) {
         clear: both;
     }
+    .lenders-list > li:nth-child(4n+4) .lender-info:after {
+        right: -1px;
+    }
+    .lenders-list > li:nth-child(3n+3) .lender-info:after {
+        right: 0;
+    }
     .lender-info {
         min-height: 76px;
     }
@@ -528,14 +534,14 @@
     }
     .section-title-box .more-apy-box .apy-box span {
         font-size: 18px;
-        left: 7px;
-        bottom: -90px;
+        left: 4px;
+        bottom: -88px;
         font-weight: 400;
     }
     .section-title-box .more-apy-box .apy-box sup {
-        top: -10px;
+        top: -6px;
         padding-left: 5px;
-        font-size: 50px;
+        font-size: 45px;
     }
     .advantages-list,
     .text-box {
@@ -719,6 +725,9 @@
     .container {
         padding: 0 15px;
     }
+    .header .container {
+        max-width: 100%;
+    }
     .container,
     .section-video-grid  .container,
     .section-video  .container,
@@ -779,6 +788,12 @@
             padding: 13px 80px 11px 42px;
         }
 
+            #footer .btn.btn-search {
+                display: none;
+            }
+            #footer .search-zip-style {
+                padding-right: 20px;
+            }
             .btn.btn-search {
                 padding: 17px 10px 14px;
             }
@@ -1173,7 +1188,7 @@
     .content ol  ul {
         margin-top: -1px;
         margin-bottom: 0 !important;
-        padding-left: 21px;
+        padding-left: 19px;
     }
     .content.small {
         font-size: 10px;
@@ -1186,9 +1201,12 @@
         margin-bottom: 4px;
     }
     .content.small ol > li:before {
-        left: 3px;
+        left: -2px;
         top: 0;
         font-size: 10px;
+    }
+    .content ol > li li {
+        padding-left: 1px !important;
     }
     .section-our-lenders .section-title {
         font-size: 15px;
@@ -1202,6 +1220,12 @@
             .lenders-list > li {
                 margin-bottom: 0;
                 width: 50%;
+            }
+            .lenders-list > li:nth-child(3n+3) .lender-info:after {
+                right: -1px;
+            }
+            .lenders-list > li:nth-child(even) .lender-info:after {
+                right: 0;
             }
             .lenders-list > li:nth-child(3n+1) {
                 clear: none;
@@ -1309,9 +1333,13 @@
         padding: 0;
     }
         .section-lender-detail .left-box img {
+            display: none;
             margin-left: -15px;
             width: -webkit-calc(100% + 30px);
             width: calc(100% + 30px);
+        }
+        .lender-detail-img {
+            display: block;
         }
     .section-lender-detail .right-box {
         padding-top: 23px;
@@ -1616,28 +1644,30 @@
     .section-title-box {
         display: table;
         width: 100%;
-        margin-top: -16px;
+        margin-top: -36px;
         margin-bottom: 14px;
     }
         .section-title-box .section-title {
+            padding-top: 13px;
             font-size: 35px;
         }
             .section-rewards-checking .section-title sup {
                 font-size: 12px;
             }
             .section-title-box .more-apy-box .apy-box {
-                font-size: 70px;
-                line-height: 76px;
+                margin-left: -4px;
+                font-size: 77px;
+                line-height: 82px;
             }
             .section-title-box .more-apy-box .apy-box span {
                 font-size: 15px;
                 left: 7px;
-                bottom: -45px;
+                bottom: -48px;
                 font-weight: 400;
             }
                 .section-title-box .more-apy-box .apy-box sup {
-                    top: 1px;
-                    padding-left: 5px;
+                    top: 3px;
+                    padding-left: 6px;
                     font-size: 42px;
                 }
 .section-rewards-checking .content ul > li {
@@ -1653,7 +1683,11 @@
         .section-rewards-checking .content.small {
             margin-left: 2px;
         }
+        .advantages-table {
+            display: none;
+        }
         .advantages-list {
+            display: block;
             font-size: 15px;
         }
             .advantages-list > li {
@@ -1665,6 +1699,15 @@
                 top: 4px;
                 left: 2px;
             }
+            .advantages-list > li:last-child:after {
+                background-color: transparent;
+            }
+            .content ol > li {
+                padding-left: 21px;
+            }
+        .advantages-table {
+            font-size: 15px;
+        }
         .btn-box {
             margin-bottom: 36px;
         }
@@ -1753,7 +1796,8 @@
 .section-banner.about {
     padding-top: 51px;
     padding-bottom: 0;
-    min-height: 454px;
+    /*min-height: 454px;*/
+    min-height: auto;
     background-size: contain;
     background-image: none !important;
 }
