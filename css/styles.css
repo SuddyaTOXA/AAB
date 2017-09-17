@@ -2642,6 +2642,26 @@ input:focus:-moz-placeholder { opacity: 0; }
                 color: #005de8;
                 text-transform: uppercase;
             }
+
+        .financing-person-box {
+            position: absolute;
+            right: -30px;
+            top: 289px;
+            font-size: 14px;
+            letter-spacing: .02em;
+            color: #171717;
+        }
+            .financing-person-box span {
+
+            }
+            .financing-name {
+                display: block;
+                margin-bottom: 0;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+            }
 /*-------------------------------------SECTION-WE-KNOW------------------------------*/
 .section-we-know {
     padding-top: 69px;
