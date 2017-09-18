@@ -388,7 +388,7 @@ input:focus::-moz-placeholder { opacity: 0; }
 input:focus:-ms-input-placeholder { opacity: 0; }
 input:focus:-moz-placeholder { opacity: 0; }
 .search-zip-style {
-    padding: 18px 80px 13px 47px;
+    padding: 17px 80px 13px 47px;
 }
 .search-zip-style:focus + .btn-search {
     color: #ffffff;
@@ -630,9 +630,8 @@ input:focus:-moz-placeholder { opacity: 0; }
 }
     .header .container {
         position: relative;
-        max-width: 1495px;
+        max-width: 1530px;
     }
-
         .logo {
             overflow: hidden;
             float: left;
